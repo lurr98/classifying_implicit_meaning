@@ -1,11 +1,10 @@
-import argparse, json, re
+import argparse, json, re, os, sys
 import matplotlib.pyplot as plt
 from plot_script import plot_confusion_matrix
 from sklearn.metrics import f1_score, accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 from sklearn.metrics import precision_recall_fscore_support as score
 from collections import defaultdict
 from typing import Union
-
 
 # TODO
 def common_prefix(strings: list):
@@ -36,24 +35,30 @@ def get_prediction(pred: str, exp_name: str) -> str:
         else:
             matches = []
             for label in ["No", "Tie", "Yes"]:
-                matches.extend(re.findall(label, pred))
-            if len(list(set(matches))) == 1:
-                return matches[0]
+                pattern = rf"\b{label}\b"
+                matches.extend(re.findall(pattern, pred, re.IGNORECASE))
+                if len(list(set(matches))) == 1:
+                    # return matches[0]
+                    return label
             else:
                 print(f"Unclear Label in Experiment {exp_name}: {pred}")
                 return "UNK"
 
 
-def evaluate_predictions_classification(gold_labels: dict, predictions: dict, evaluation_dict: dict, key: str, plot_name: str, second_pred: bool, mistakes: Union[bool, str]) -> dict:
+def evaluate_predictions_classification(gold_labels: dict, predictions: dict, evaluation_dict: dict, key: str, plot_name: str, second_pred: bool, mistakes: Union[bool, str], gold_anno: str="MACE Label") -> dict:
 
     pred_list, gold_list, id_list = [], [], []
     for id_sample, sample in gold_labels.items():
         if id_sample in predictions:
-            gold_list.append(sample["Majority Vote"])
+            gold_list.append(sample[gold_anno])
             pred_list.append(get_prediction(predictions[id_sample], key))
             id_list.append(id_sample)
+    
+    if gold_list == []:
+        print(f"Topic {key} is empty, skipping evaluation.")
+        return
 
-    if mistakes and key.endswith("nt"):
+    if mistakes:
         handle_mistakes(mistakes, gold_list, pred_list, id_list, key)
 
     all_labels = sorted(list(set(gold_list)))
@@ -75,11 +80,11 @@ def evaluate_predictions_classification(gold_labels: dict, predictions: dict, ev
     return evaluation_dict
 
 
-def evaluate_predictions_nli(gold_labels: dict, predictions: dict, evaluation_dict: dict, key: str, plot_name: str, second_pred: str, mistakes: Union[bool, str]) -> dict:
+def evaluate_predictions_nli(gold_labels: dict, predictions: dict, evaluation_dict: dict, key: str, plot_name: str, second_pred: str, mistakes: Union[bool, str], gold_anno: str="MACE Label") -> dict:
 
     if len(list(predictions["predictions"].values())[0]) == 2:
         # TODO: not_entailment could also be "Tie"
-        label_dict = {"not_entailment": "Yes", "entailment": "No"}
+        label_dict = {"not_entailment": "Yes", "entailment": "No", "contradiction": "Yes", "neutral": "Yes"}
     else:
         label_dict = {"contradiction": "Yes", "neutral": "Tie", "entailment": "No"}
     pred_list, gold_list, id_list = [], [], []
@@ -87,10 +92,10 @@ def evaluate_predictions_nli(gold_labels: dict, predictions: dict, evaluation_di
         plot_name = plot_name[:-4] + f"_secondprob{second_pred}.png"
     for id_sample, sample in gold_labels.items():
         if id_sample in predictions["predictions"]: 
-            gold_list.append(sample["Majority Vote"])
+            gold_list.append(sample[gold_anno])
             preds = predictions["predictions"][id_sample]
             id_list.append(id_sample)
-            if second_pred:
+            if second_pred and len(preds) > 2:
                 if preds[0] > float(second_pred) or preds[2] > float(second_pred):
                     binary_preds = [preds[0], preds[2]]
                     pred_list.append(predictions["labels"][preds.index(max(binary_preds))])
@@ -100,6 +105,10 @@ def evaluate_predictions_nli(gold_labels: dict, predictions: dict, evaluation_di
                 pred_list.append(predictions["labels"][preds.index(max(preds))])
 
     pred_list = [label_dict[item] for item in pred_list]
+
+    if gold_list == []:
+        print(f"Topic {key} is empty, skipping evaluation.")
+        return
 
     if mistakes:
         handle_mistakes(mistakes, gold_list, pred_list, id_list, key)
@@ -124,8 +133,11 @@ def evaluate_predictions_nli(gold_labels: dict, predictions: dict, evaluation_di
 
 def handle_mistakes(mistakes: str, gold_list: list, pred_list: list, id_list: list, key: str):
 
-    with open(mistakes, "r") as m:
+    try:
+        with open(mistakes, "r") as m:
             mistake_dict = json.load(m)
+    except FileNotFoundError:
+        mistake_dict = {}
 
     new_mistake_dict = store_mistakes(mistake_dict, gold_list, pred_list, id_list, key)
 
@@ -142,9 +154,6 @@ def store_mistakes(mistake_dict: dict, gold_list: list, pred_list: list, id_list
             else:
                 mistake_dict[key] = [id_list[i]]
 
-    print(f"Mistake dict: {key}")
-    print(len(mistake_dict[key]))
-
     return mistake_dict
 
 
@@ -159,46 +168,14 @@ def get_clear_cases(gold_standard: dict) -> dict:
     return clear_cases
 
 
-def remove_ties(gold_standard: dict) -> dict:
+def get_topic_cases(gold_standard: dict, id2topic: dict, topic: str) -> dict:
 
-    no_ties = {}
-    i = 0
+    topic_cases = {}
     for sample_id, sample in gold_standard.items():
-        if sample["Majority Vote"] != "Tie":
-            i += 1
-            no_ties[sample_id] = sample
+        if id2topic[sample_id] == topic:
+            topic_cases[sample_id] = sample
 
-    return no_ties
-
-
-def sub_sample(gold_standard: dict) -> dict:
-
-    clear_cases = get_clear_cases(gold_standard)
-    start = {}
-
-    for sample_id, sample in gold_standard.items():
-        # TODO: make this more general such that less frequent label is not necessarily "Yes" 
-        if sample["Majority Vote"] == "Yes":
-            start[sample_id] = sample
-
-    final = clear_cases | start
-    less_freq_samples = len(start.keys()) - (len(final.keys()) - len(start.keys()))
-    if len(final.keys()) / 2 > len(start.keys()):
-        i = len(final.keys()) - len(start.keys())
-        for sample_id in list(final.keys()):
-            if i > len(start.keys()):
-                if final[sample_id]["Majority Vote"] == "No":
-                    del final[sample_id]
-                    i -= 1
-    else:
-        i = 0
-        for sample_id, sample in gold_standard.items():
-            if i < less_freq_samples:
-                if sample["Majority Vote"] == "No" and not sample_id in final:
-                    final[sample_id] = sample
-                    i += 1
-
-    return final
+    return topic_cases
 
 
 def average_metrics(results: dict) -> dict:
@@ -221,86 +198,81 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='tba')
     parser.add_argument('targets', type=str, help='name of the file containing the target labels')
-    parser.add_argument('predictions', type=str, help='name of the file(s) containing the predictions')
+    parser.add_argument('preds_dir', type=str, help='name of the folder containing the predictions')
     parser.add_argument('evaluation_dict', type=str, help='name of the evaluation file')
     parser.add_argument('-m', '--mistake', nargs='?', help='name of the mistake file if needed')
     parser.add_argument('-sp', '--second_pred', nargs='?', help='threshold for second prediction')
     parser.add_argument('-nli', '--nli', action='store_true')
     parser.add_argument('-p', '--plot_name', action='store_true')
-    parser.add_argument('-ss', '--sub_sample', action='store_true')
     parser.add_argument('-cc', '--clear_cases', action='store_true')
-    parser.add_argument('-nt', '--no_ties', action='store_true')
-    parser.add_argument('-cv', '--cross_val', action='store_true')
+    parser.add_argument('-t', '--topics', action='store_true')
 
     args = parser.parse_args()
 
-    print("this is running")
+    base_dir = "/anvme/workspace/v106be21-arr_workspace_december"
+    ood = "out_of_domain_test" if "out_of_domain_test" in args.preds_dir else "test"
+
+    with open(os.path.join(base_dir, "implicit_data", "id2topic.json"), "r") as jsn:
+        id2topic = json.load(jsn)
+
     print("Read targets.")
-    with open(args.targets, "r") as trg:
+    with open(os.path.join(base_dir, args.targets), "r") as trg:
         targets = json.load(trg)
 
+    if args.nli:
+        evaluate = evaluate_predictions_nli
+        nli = "nli"
+    else:
+        evaluate = evaluate_predictions_classification
+        nli = "classification"
+
     try:
-        with open(args.evaluation_dict, "r") as ev:
+        with open(os.path.join(base_dir, "evaluation", nli, args.evaluation_dict), "r") as ev:
             evaluation = json.load(ev)
     except FileNotFoundError:
         evaluation = {}
+    
+    save_eval_names = [[] for _ in os.listdir(os.path.join(base_dir, "predictions", nli, args.preds_dir))]
+    
+    mistake_path = os.path.join(base_dir, "evaluation", nli, args.mistake) if args.mistake else False 
 
-    save_eval_names = [[] for pred_file in args.predictions.split(",")]
-    for i, file in enumerate(args.predictions.split(",")):
-        with open(file, "r") as preds:
+
+    for i, file in enumerate(os.listdir(os.path.join(base_dir, "predictions", nli, args.preds_dir))):
+
+        if not file.endswith(".json"):
+            continue
+            
+        with open(os.path.join(base_dir, "predictions", nli, args.preds_dir, file), "r") as preds:
             predictions = json.load(preds)
 
         if args.second_pred:
             evaluation_name = "_".join(file.split("predictions_")[1:])[:-5] + f"_secondprob{args.second_pred}"
         else:
             evaluation_name = "_".join(file.split("predictions_")[1:])[:-5]
-
-        if args.nli:
-            evaluate = evaluate_predictions_nli
-            nli, noties = "nli", ""
-        else:
-            evaluate = evaluate_predictions_classification
-            nli = "classification"
-            noties = "noties/" if "noties" in evaluation_name else "ties/"
     
-        if "discarded" in args.targets:
-            evaluation_name += "_discarded"
-        elif "kept" in args.targets:
-            evaluation_name += "_kept"
         save_eval_names[i].append(evaluation_name)
-    
-        if args.plot_name:
-            new_evaluation = evaluate(targets, predictions, evaluation, evaluation_name, f"plots/{nli}/confusion_matrices/{noties}cm_" + evaluation_name + ".png", args.second_pred, args.mistake)
-        else:
-            new_evaluation = evaluate(targets, predictions, evaluation, evaluation_name, "", args.second_pred, args.mistake)
-    
+
         if args.clear_cases:
             cc_targets = get_clear_cases(targets)
             cc_evaluation_name = evaluation_name + "_cc"
             save_eval_names[i].append(cc_evaluation_name)
     
-            new_evaluation = evaluate(cc_targets, predictions, evaluation, cc_evaluation_name, f"plots/{nli}/confusion_matrices/{noties}cm_" + cc_evaluation_name + ".png" if args.plot_name else "", args.second_pred, args.mistake)
+            new_evaluation = evaluate(cc_targets, predictions, evaluation, cc_evaluation_name, os.path.join(base_dir, "evaluation", nli, "plots", f"cm_{ood}_{cc_evaluation_name}.png") if args.plot_name else "", args.second_pred, mistake_path)
     
-        if args.no_ties:
-            nt_targets = remove_ties(targets)
-            nt_evaluation_name = evaluation_name + "_nt"
-            save_eval_names[i].append(nt_evaluation_name)
+        if args.topics:
+            for topic in set(id2topic.values()):
+                topic_targets = get_topic_cases(targets, id2topic, topic)
+                topic_evaluation_name = evaluation_name + f"_{topic}"
+                save_eval_names[i].append(topic_evaluation_name)
+    # 
+                new_evaluation = evaluate(topic_targets, predictions, evaluation, topic_evaluation_name, os.path.join(base_dir, "evaluation", nli, "plots", f"cm_{ood}_{topic_evaluation_name}_{args.preds_dir.split('/')[-1]}" + ".png") if args.plot_name else "", args.second_pred, mistake_path)
+                if new_evaluation:
+                    print(f"Saving to {os.path.join(base_dir, 'evaluation', nli, ood, args.evaluation_dict)}")
+                    with open(os.path.join(base_dir, "evaluation", nli, ood, args.evaluation_dict), "w") as ed:
+                        json.dump(new_evaluation, ed)
     
-            new_evaluation = evaluate(nt_targets, predictions, evaluation, nt_evaluation_name, f"plots/{nli}/confusion_matrices/{noties}cm_" + nt_evaluation_name + ".png" if args.plot_name else "", args.second_pred, args.mistake)
-    
-        if args.sub_sample:
-            ss_targets = sub_sample(targets)
-            ss_evaluation_name = evaluation_name + "_ss"
-            save_eval_names[i].append(ss_evaluation_name)
-    
-            new_evaluation = evaluate(ss_targets, predictions, evaluation, ss_evaluation_name, f"plots/{nli}/confusion_matrices/{noties}cm_" + ss_evaluation_name + ".png" if args.plot_name else "", args.second_pred, args.mistake)
+        new_evaluation = evaluate(targets, predictions, evaluation, evaluation_name, os.path.join(base_dir, "evaluation", nli, "plots", f"cm_{ood}_{evaluation_name}_{args.preds_dir.split('/')[-1]}.png") if args.plot_name else "", args.second_pred, mistake_path)
 
-
-    if args.cross_val:
-        for j, name in enumerate(save_eval_names[0]):
-            level_names = [pred_file[j] for pred_file in save_eval_names]
-            level_eval = {eval_name: new_evaluation[eval_name] for eval_name in level_names}
-            new_evaluation[f"AV_{common_prefix(level_names)}{common_suffix(level_names)}"] = average_metrics(level_eval)
-
-    with open(args.evaluation_dict, "w") as ed:
+    print(f"Saving to {os.path.join(base_dir, 'evaluation', nli, ood, args.evaluation_dict)}")
+    with open(os.path.join(base_dir, "evaluation", nli, ood, args.evaluation_dict), "w") as ed:
         json.dump(new_evaluation, ed)

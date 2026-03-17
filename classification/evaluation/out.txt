@@ -1,0 +1,372 @@
+Read targets.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic c_ft_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic c_ft_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic c_ft_secondprob0_less_filters is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic c_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic c_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic c_secondprob0_less_filters is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic nc_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic nc_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Topic nc_secondprob0_less_filters is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_bart.json
+Read targets.
+Topic c_secondprob0_less_filters is empty, skipping evaluation.
+Topic c_secondprob0_youth is empty, skipping evaluation.
+Topic c_secondprob0_garden is empty, skipping evaluation.
+Topic c_secondprob0_food is empty, skipping evaluation.
+Topic c_secondprob0_work is empty, skipping evaluation.
+Topic c_secondprob0_sports is empty, skipping evaluation.
+Topic c_secondprob0_travel is empty, skipping evaluation.
+Topic c_secondprob0_education is empty, skipping evaluation.
+Topic c_secondprob0_family is empty, skipping evaluation.
+Topic c_secondprob0_arts is empty, skipping evaluation.
+Topic c_secondprob0_pets is empty, skipping evaluation.
+Topic c_secondprob0_health is empty, skipping evaluation.
+Topic c_secondprob0_more_filters is empty, skipping evaluation.
+Topic c_secondprob0_philosophy is empty, skipping evaluation.
+Topic c_secondprob0_relationship is empty, skipping evaluation.
+Topic c_secondprob0_cars is empty, skipping evaluation.
+Topic c_secondprob0_style is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_bart.json
+Topic c_secondprob0_computer is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_bart.json
+Topic nc_secondprob0_less_filters is empty, skipping evaluation.
+Topic nc_secondprob0_youth is empty, skipping evaluation.
+Topic nc_secondprob0_garden is empty, skipping evaluation.
+Topic nc_secondprob0_food is empty, skipping evaluation.
+Topic nc_secondprob0_work is empty, skipping evaluation.
+Topic nc_secondprob0_sports is empty, skipping evaluation.
+Topic nc_secondprob0_travel is empty, skipping evaluation.
+Topic nc_secondprob0_education is empty, skipping evaluation.
+Topic nc_secondprob0_family is empty, skipping evaluation.
+Topic nc_secondprob0_arts is empty, skipping evaluation.
+Topic nc_secondprob0_pets is empty, skipping evaluation.
+Topic nc_secondprob0_health is empty, skipping evaluation.
+Topic nc_secondprob0_more_filters is empty, skipping evaluation.
+Topic nc_secondprob0_philosophy is empty, skipping evaluation.
+Topic nc_secondprob0_relationship is empty, skipping evaluation.
+Topic nc_secondprob0_cars is empty, skipping evaluation.
+Topic nc_secondprob0_style is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_bart.json
+Topic nc_secondprob0_computer is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_bart.json
+Topic c_ft_secondprob0_less_filters is empty, skipping evaluation.
+Topic c_ft_secondprob0_youth is empty, skipping evaluation.
+Topic c_ft_secondprob0_garden is empty, skipping evaluation.
+Topic c_ft_secondprob0_food is empty, skipping evaluation.
+Topic c_ft_secondprob0_work is empty, skipping evaluation.
+Topic c_ft_secondprob0_sports is empty, skipping evaluation.
+Topic c_ft_secondprob0_travel is empty, skipping evaluation.
+Topic c_ft_secondprob0_education is empty, skipping evaluation.
+Topic c_ft_secondprob0_family is empty, skipping evaluation.
+Topic c_ft_secondprob0_arts is empty, skipping evaluation.
+Topic c_ft_secondprob0_pets is empty, skipping evaluation.
+Topic c_ft_secondprob0_health is empty, skipping evaluation.
+Topic c_ft_secondprob0_more_filters is empty, skipping evaluation.
+Topic c_ft_secondprob0_philosophy is empty, skipping evaluation.
+Topic c_ft_secondprob0_relationship is empty, skipping evaluation.
+Topic c_ft_secondprob0_cars is empty, skipping evaluation.
+Topic c_ft_secondprob0_style is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_bart.json
+Topic c_ft_secondprob0_computer is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_bart.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_bart.json
+Read targets.
+Topic c_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Topic c_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Topic c_secondprob0_less_filters is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Topic nc_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Topic nc_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Topic nc_secondprob0_less_filters is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Topic c_ft_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Topic c_ft_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Topic c_ft_secondprob0_less_filters is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_roberta.json
+Read targets.
+Topic c_secondprob0_garden is empty, skipping evaluation.
+Topic c_secondprob0_work is empty, skipping evaluation.
+Topic c_secondprob0_style is empty, skipping evaluation.
+Topic c_secondprob0_pets is empty, skipping evaluation.
+Topic c_secondprob0_health is empty, skipping evaluation.
+Topic c_secondprob0_relationship is empty, skipping evaluation.
+Topic c_secondprob0_less_filters is empty, skipping evaluation.
+Topic c_secondprob0_philosophy is empty, skipping evaluation.
+Topic c_secondprob0_cars is empty, skipping evaluation.
+Topic c_secondprob0_youth is empty, skipping evaluation.
+Topic c_secondprob0_food is empty, skipping evaluation.
+Topic c_secondprob0_education is empty, skipping evaluation.
+Topic c_secondprob0_computer is empty, skipping evaluation.
+Topic c_secondprob0_travel is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_roberta.json
+Topic c_secondprob0_more_filters is empty, skipping evaluation.
+Topic c_secondprob0_family is empty, skipping evaluation.
+Topic c_secondprob0_arts is empty, skipping evaluation.
+Topic c_secondprob0_sports is empty, skipping evaluation.
+Topic c_ft_secondprob0_garden is empty, skipping evaluation.
+Topic c_ft_secondprob0_work is empty, skipping evaluation.
+Topic c_ft_secondprob0_style is empty, skipping evaluation.
+Topic c_ft_secondprob0_pets is empty, skipping evaluation.
+Topic c_ft_secondprob0_health is empty, skipping evaluation.
+Topic c_ft_secondprob0_relationship is empty, skipping evaluation.
+Topic c_ft_secondprob0_less_filters is empty, skipping evaluation.
+Topic c_ft_secondprob0_philosophy is empty, skipping evaluation.
+Topic c_ft_secondprob0_cars is empty, skipping evaluation.
+Topic c_ft_secondprob0_youth is empty, skipping evaluation.
+Topic c_ft_secondprob0_food is empty, skipping evaluation.
+Topic c_ft_secondprob0_education is empty, skipping evaluation.
+Topic c_ft_secondprob0_computer is empty, skipping evaluation.
+Topic c_ft_secondprob0_travel is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_roberta.json
+Topic c_ft_secondprob0_more_filters is empty, skipping evaluation.
+Topic c_ft_secondprob0_family is empty, skipping evaluation.
+Topic c_ft_secondprob0_arts is empty, skipping evaluation.
+Topic c_ft_secondprob0_sports is empty, skipping evaluation.
+Topic nc_secondprob0_garden is empty, skipping evaluation.
+Topic nc_secondprob0_work is empty, skipping evaluation.
+Topic nc_secondprob0_style is empty, skipping evaluation.
+Topic nc_secondprob0_pets is empty, skipping evaluation.
+Topic nc_secondprob0_health is empty, skipping evaluation.
+Topic nc_secondprob0_relationship is empty, skipping evaluation.
+Topic nc_secondprob0_less_filters is empty, skipping evaluation.
+Topic nc_secondprob0_philosophy is empty, skipping evaluation.
+Topic nc_secondprob0_cars is empty, skipping evaluation.
+Topic nc_secondprob0_youth is empty, skipping evaluation.
+Topic nc_secondprob0_food is empty, skipping evaluation.
+Topic nc_secondprob0_education is empty, skipping evaluation.
+Topic nc_secondprob0_computer is empty, skipping evaluation.
+Topic nc_secondprob0_travel is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_roberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_roberta.json
+Topic nc_secondprob0_more_filters is empty, skipping evaluation.
+Topic nc_secondprob0_family is empty, skipping evaluation.
+Topic nc_secondprob0_arts is empty, skipping evaluation.
+Topic nc_secondprob0_sports is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_roberta.json
+Read targets.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Topic c_secondprob0_less_filters is empty, skipping evaluation.
+Topic c_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Topic c_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Topic nc_secondprob0_less_filters is empty, skipping evaluation.
+Topic nc_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Topic nc_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Topic c_ft_secondprob0_less_filters is empty, skipping evaluation.
+Topic c_ft_secondprob0_business is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Topic c_ft_secondprob0_hobbies is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/test/evaluation_classification_deberta.json
+Read targets.
+Topic c_ft_secondprob0_philosophy is empty, skipping evaluation.
+Topic c_ft_secondprob0_style is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_deberta.json
+Topic c_ft_secondprob0_garden is empty, skipping evaluation.
+Topic c_ft_secondprob0_work is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_deberta.json
+Topic c_ft_secondprob0_youth is empty, skipping evaluation.
+Topic c_ft_secondprob0_less_filters is empty, skipping evaluation.
+Topic c_ft_secondprob0_family is empty, skipping evaluation.
+Topic c_ft_secondprob0_education is empty, skipping evaluation.
+Topic c_ft_secondprob0_computer is empty, skipping evaluation.
+Topic c_ft_secondprob0_cars is empty, skipping evaluation.
+Topic c_ft_secondprob0_food is empty, skipping evaluation.
+Topic c_ft_secondprob0_sports is empty, skipping evaluation.
+Topic c_ft_secondprob0_health is empty, skipping evaluation.
+Topic c_ft_secondprob0_arts is empty, skipping evaluation.
+Topic c_ft_secondprob0_more_filters is empty, skipping evaluation.
+Topic c_ft_secondprob0_travel is empty, skipping evaluation.
+Topic c_ft_secondprob0_pets is empty, skipping evaluation.
+Topic c_ft_secondprob0_relationship is empty, skipping evaluation.
+Topic c_secondprob0_philosophy is empty, skipping evaluation.
+Topic c_secondprob0_style is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_deberta.json
+Topic c_secondprob0_garden is empty, skipping evaluation.
+Topic c_secondprob0_work is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_deberta.json
+Topic c_secondprob0_youth is empty, skipping evaluation.
+Topic c_secondprob0_less_filters is empty, skipping evaluation.
+Topic c_secondprob0_family is empty, skipping evaluation.
+Topic c_secondprob0_education is empty, skipping evaluation.
+Topic c_secondprob0_computer is empty, skipping evaluation.
+Topic c_secondprob0_cars is empty, skipping evaluation.
+Topic c_secondprob0_food is empty, skipping evaluation.
+Topic c_secondprob0_sports is empty, skipping evaluation.
+Topic c_secondprob0_health is empty, skipping evaluation.
+Topic c_secondprob0_arts is empty, skipping evaluation.
+Topic c_secondprob0_more_filters is empty, skipping evaluation.
+Topic c_secondprob0_travel is empty, skipping evaluation.
+Topic c_secondprob0_pets is empty, skipping evaluation.
+Topic c_secondprob0_relationship is empty, skipping evaluation.
+Topic nc_secondprob0_philosophy is empty, skipping evaluation.
+Topic nc_secondprob0_style is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_deberta.json
+Topic nc_secondprob0_garden is empty, skipping evaluation.
+Topic nc_secondprob0_work is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_deberta.json
+Topic nc_secondprob0_youth is empty, skipping evaluation.
+Topic nc_secondprob0_less_filters is empty, skipping evaluation.
+Topic nc_secondprob0_family is empty, skipping evaluation.
+Topic nc_secondprob0_education is empty, skipping evaluation.
+Topic nc_secondprob0_computer is empty, skipping evaluation.
+Topic nc_secondprob0_cars is empty, skipping evaluation.
+Topic nc_secondprob0_food is empty, skipping evaluation.
+Topic nc_secondprob0_sports is empty, skipping evaluation.
+Topic nc_secondprob0_health is empty, skipping evaluation.
+Topic nc_secondprob0_arts is empty, skipping evaluation.
+Topic nc_secondprob0_more_filters is empty, skipping evaluation.
+Topic nc_secondprob0_travel is empty, skipping evaluation.
+Topic nc_secondprob0_pets is empty, skipping evaluation.
+Topic nc_secondprob0_relationship is empty, skipping evaluation.
+Saving to /anvme/workspace/v106be21-arr_workspace_december/evaluation/nli/out_of_domain/evaluation_classification_deberta.json

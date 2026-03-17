@@ -14,18 +14,18 @@ During the annotation task, select "No" if you think that changing the bold sent
 If any of the following apply, select "No".
 
 #### **1. Context**
-The added information is recoverable from the context (including the article title). In the following example, the reference “doll” can be inferred from the title of the article.
+The added information is recoverable from the context (including the article title).
 
 ---
 
 #### **2. Logical Reasoning**
-The added information is a logical premise or consequence of the given text. In the following example, the fact that you do not have to buy something if you already possess it can be logically inferred by most readers.
+The added information is a logical premise or consequence of the given text.
 
 ---
 
 #### **3. Background Knowledge**
 
-The information in the added text was already anticipated due to existing background knowledge. For instance, most readers would know that teachers usually prepare assignments for their students. This category might sometimes correlate with *Context*.
+The information in the added text was already anticipated due to existing background knowledge. This category might sometimes correlate with *Context*.
 
 ---
 

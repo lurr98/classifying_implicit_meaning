@@ -1,14 +1,60 @@
-import sys, argparse, re, os, tempfile
+import os, sys
+sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
+
+import signal, time, argparse, re, tempfile, spacy, benepar
 import xml.etree.ElementTree as ET
+from nltk import Tree
 from isanlp_rst.parser import Parser
 from frame_semantic_transformer import FrameSemanticTransformer
-sys.path.append('..')
-from prepare_data import read_json, write_json
+from core.utils import read_json, write_json
 
 
-def prepare_samples(samples_file: str):
+# Define custom timeout exception
+class TimeoutException(Exception):
+    pass
 
-    samples_dict = read_json(samples_file)
+def timeout_handler(signum, frame):
+    raise TimeoutException("Function took too long!")
+
+# Set the timeout signal
+signal.signal(signal.SIGALRM, timeout_handler)
+
+def run_with_timeout(func, timeout, *args, **kwargs):
+    signal.alarm(timeout)  # Set time limit in seconds
+    try:
+        result = func(*args, **kwargs)
+        signal.alarm(0)  # Reset alarm if function completes in time
+        return result
+    except TimeoutException:
+        print("Function timed out!")
+        return None
+
+
+def remove_spaces_wrapper(text: str) -> str:
+
+    cleaned_text = run_with_timeout(remove_spaces, 30, text)
+
+    return cleaned_text
+
+def remove_spaces(text: str) -> str:
+
+    start = time.time()
+    # remove spaces before and after "/"
+    new_text_slash = re.sub(r'\s*([/])\s*', r'\1', text)
+    # Remove spaces inside quotation marks
+    new_text_quot = re.sub(r'\s*"\s*([^"]*?)\s*"\s*', r' "\1" ', new_text_slash)
+    # Remove spaces inside parentheses
+    new_text_paren = re.sub(r'\s*\(\s*([^)]+?)\s*\)\s*', r' (\1) ', new_text_quot)
+    # Remove spaces before punctuation
+    new_text = re.sub(r'\s+([.,!?;:\'])', r'\1', new_text_paren)
+    end = time.time()
+    # print(f"Removing spaces took {end-start} seconds")
+
+    # print(f"Took {end-start} seconds.")
+    return new_text.strip()
+
+
+def prepare_samples(samples_dict: dict):
 
     samples, revisions, ids = [], [], []
 
@@ -24,7 +70,8 @@ def prepare_samples(samples_file: str):
 
 def check_revision_in_framework(revision: str, candidate: str):
 
-    subbed = re.sub("[.,:;\"'?!]", "", candidate)
+    sub_contraction = re.sub(" ' ", "'", candidate) 
+    subbed = re.sub("[.,:;\"?!]", "", sub_contraction)
     if revision.strip().lower() == subbed.strip().lower():
         return True
     else:
@@ -36,6 +83,7 @@ def rst_parser(samples: list, revisions: list, ids: list):
     def read_xml(xml_string: str):
 
         root = ET.fromstring(xml_string)
+        print(root)
 
         segments, relations = [], {}
         for seg in root.findall(".//segment"):
@@ -46,15 +94,20 @@ def rst_parser(samples: list, revisions: list, ids: list):
                 "text": seg.text.strip() if seg.text else ""
             })
 
-        for rel in root.findall(".//relations"):
-            relations[rel.attrib["name"]] = rel.attrib.get("type")
-        
-        for seg in segments:
-            try:
-                seg["reltype"] = relations[seg["relname"]]
-            except KeyError as e:
-                print(f"Key Error: {e}")
+        # for rel in root.findall(".//relations"):
+        #     print(rel)
+        #     if "name" in rel.attrib:
+        #         relations[rel.attrib["name"]] = rel.attrib.get("type")
+        #     # relations[rel.attrib["name"]] = rel.attrib.get("type")
+        # 
+        # for seg in segments:
+        #     print(seg)
+        #     try:
+        #         seg["reltype"] = relations[seg["relname"]]
+        #     except KeyError as e:
+        #         print(f"Key Error: {e}")
         return segments
+        
     # Choose one of the available versions:
     # 'gumrrg', 'rstdt', or 'rstreebank'
     version = 'rstdt'
@@ -82,6 +135,7 @@ def rst_parser(samples: list, revisions: list, ids: list):
         # cleanup
         os.remove(tmp_name)
 
+        print(rs3_string)
         segments = read_xml(rs3_string)
         parsed_samples[ids[i]] = {"rest_tree": [], "revision": revisions[i]}
         for segment in segments:
@@ -113,22 +167,87 @@ def frame_net_parser(samples: list, revisions: list, ids: list):
     return frames
 
 
+def constituency_parser(samples: list, revisions: list, ids: list):
+    
+    nlp = spacy.load("en_core_web_lg")
+
+    # Add the Benepar component
+    benepar.download('benepar_en3')  # Download the latest English model
+    nlp.add_pipe("benepar", config={"model": "benepar_en3"})
+
+    phrases = {}
+    for i, sample in enumerate(samples):
+        doc = nlp(sample)
+        for sent in doc.sents:
+            parse_tree = sent._.parse_string  # constituency parse tree
+            tree = Tree.fromstring(parse_tree)  # convert to NLTK Tree
+
+        extracted_phrases, labels = extract_phrases(tree, {})
+
+        try:
+            phrases[ids[i]] = {"revision": revisions[i], "rev_phrase": labels[revisions[i]], "phrases": extracted_phrases, "labels": labels}
+        except KeyError:
+            if revisions[i].startswith("and") or revisions[i].startswith("or"):
+                phrases[ids[i]] = {"revision": revisions[i], "rev_phrase": "ADD_COOR", "phrases": extracted_phrases, "labels": labels}
+            else:
+                phrases[ids[i]] = {"revision": revisions[i], "rev_phrase": None, "phrases": extracted_phrases, "labels": labels}
+
+    return phrases
+
+
+def extract_phrases(tree: Tree, labels: dict) -> tuple[set, dict]:
+    """Extracts all phrases (constituents) from a constituency tree."""
+    
+    if isinstance(tree, str):  # Base case: Leaf node (word)
+        return set(), labels
+    
+    phrase = remove_spaces_wrapper(" ".join(tree.leaves()))
+    phrases = {phrase}  # Join words to form the phrase
+    labels[phrase] = tree.label()
+    for subtree in tree:
+        next_phrase, labels = extract_phrases(subtree, labels)
+        phrases.update(next_phrase)  # Recursively extract phrases
+        labels[subtree if isinstance(subtree, str) else remove_spaces_wrapper(" ".join(subtree.leaves()))] = 'leaf' if isinstance(subtree, str) else subtree.label()
+
+    phrases = [remove_spaces_wrapper(phrase) for phrase in phrases]
+    return phrases, labels
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='tba')
-    parser.add_argument('sample_dir', type=str, help='name of the directory containing the samples')
-    parser.add_argument('parser', type=str, help='name of the parser to use')
-    parser.add_argument('output_dir', type=str, help='name of the directory to store the output')
+    parser.add_argument('samples', type=str, help='name of the file containing the samples')
+    parser.add_argument('parser', type=str, help='name of the parser to use ("rst", "framenet" or "syntax")')
+    # parser.add_argument('output_dir', type=str, help='name of the directory to store the output')
+    parser.add_argument('-t', '--topics', nargs='?', help='name of the id to topic mapping file')
 
     args = parser.parse_args()
 
-    for subdir in os.listdir(args.sample_dir):
-        topic = subdir[:-6]
-        samples, revisions, ids = prepare_samples(os.path.join(args.sample_dir, subdir, "current_samples.json"))
+    base_dir = "/anvme/workspace/v106be21-arr_workspace_december/classifying_implicit_meaning/framework_parsers"
 
-        if args.parser == "rst":
-            parsed = rst_parser(samples, revisions, ids)
-        elif args.parser == "framenet":
-            parsed = frame_net_parser(samples, revisions, ids)
+    if args.parser == "rst":
+        framework_parser = rst_parser 
+    elif args.parser == "framenet":
+        framework_parser = frame_net_parser
+    elif args.parser == "constituency":
+        framework_parser = constituency_parser
+    
+    samples_dict = read_json(args.samples)
 
-        write_json(parsed, os.path.join(args.output_dir, f"fw_{topic}_study", f"{args.parser}_parsed.json")
+    if args.topics:
+        id2topic = read_json(args.topics)
+
+        for topic in set(id2topic.values()):
+            samples_dict = {idx: sample for idx, sample in samples_dict.items() if id2topic[idx] == topic}
+
+            samples, revisions, ids = prepare_samples(samples_dict)
+
+            parsed = framework_parser(samples, revisions, ids)
+
+            write_json(parsed, os.path.join(base_dir, args.parser, f"{topic}_{args.parser}_parsed.json"))
+
+    else:
+        samples, revisions, ids = prepare_samples(samples_dict)
+        
+        parsed = framework_parser(samples, revisions, ids)
+    
+        write_json(parsed, os.path.join(base_dir, args.parser, f"{args.parser}_parsed.json"))
