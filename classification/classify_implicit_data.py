@@ -11,10 +11,10 @@ os.environ["PYTORCH_ALLOC_CONF"] = "max_split_size_mb:512"
 
 import argparse, json, torch, spacy, pickle, re, sys
 import numpy as np
+from dotenv import load_dotenv
 from openai import OpenAI
 from collections import Counter
-from datasets import Dataset
-from peft import PeftModel
+from huggingface_hub import login
 from fine_tuning import get_samples
 from fine_tuning_llms import fine_tune_instruction_lm
 from transformers import (pipeline, AutoTokenizer, AutoModelForSequenceClassification,
@@ -28,7 +28,9 @@ from core.utils import read_json, write_json, format_few_examples, format_target
 
 torch.cuda.empty_cache()
 
-access_token="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"
+load_dotenv()
+login(token=os.getenv("ACCESS_TOKEN"))
+
 # prompt = "You are an annotator that has to annotate the data based on the following instruction:\n\n<break>\n\n"
 labels = ["No", "Yes"]
 
@@ -397,9 +399,11 @@ def classify_samples_mixtral(item_dict: dict, instructions: str, model_tokenizer
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Classify a single study from topic_data')
-    parser.add_argument('data_split', type=str, help='the data split we want to test on ("test" or "out_of_domain_test")')
-    parser.add_argument('api', type=str, help='name of the file containing API key')
-    parser.add_argument('model', type=str, help='name of the model to be used')
+    parser.add_argument('--data_split', type=str, help='the data split we want to test on ("test" or "out_of_domain_test")')
+    parser.add_argument('--api', type=str, help='name of the file containing API key')
+    parser.add_argument('--model', type=str, help='name of the model to be used')
+    parser.add_argument('--config', type=str, help='name of the trainer config to be used')
+    parser.add_argument('--lora_config', type=str, help='name of the lora config to be used')
     # parser.add_argument('outfile', type=str, help='name of the output file containing the predictions')
     parser.add_argument('-f', '--few_shot', nargs='?', help='number of few shot examples that will be presented to the model, split by comma if multiple')
     parser.add_argument('-z', '--zero_shot', action='store_true')
@@ -409,37 +413,31 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     model_names = {
-        "openai/gpt-oss-20b": "oss_GPT", 
-        "mistralai/Mixtral-8x7B-Instruct-v0.1": "mixtral", 
-        "mistralai/Mixtral-8x7B-v0.1": "mixtral", 
+        "openai/gpt-oss-20b": "oss_GPT",
         "mistralai/Mistral-7B-Instruct-v0.3": "mistral", 
         "meta-llama/Meta-Llama-3-8B-Instruct": "llama", 
         "meta-llama/Meta-Llama-3-8B": "llama", 
-        "sft_output/llama": "llama", 
-        "sft_output/qwen": "qwen", 
-        "sft_output/mistral": "mistral", 
-        "cl_ft/llama": "llama", 
-        "cl_ft/llama_1epoch": "llama", 
-        "cl_ft/mixtral": "mixtral", 
-        "cl_ft/mixtral_1epoch": "mixtral", 
+        "classification/fine_tuned_models/llama": "llama", 
+        "classification/fine_tuned_models/qwen": "qwen", 
+        "classification/fine_tuned_models/mistral": "mistral", 
         "Qwen/Qwen3-4B-Instruct-2507": "qwen"}
 
-    ft_base = {
-        "ft_0402/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
-        "ft_0902/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
-        "ft_0402_depr/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
-        "ft_0402_depr2/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
-        "ft_0402/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
-        "ft_0902/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
-        "ft_0402_depr/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
-        "ft_0402_depr2/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
-        "ft_0402/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
-        "ft_0902/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
-        "ft_0402_depr/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
-        "ft_0402_depr2/mistral": "mistralai/Mistral-7B-Instruct-v0.3"}
+    # ft_base = {
+    #     "ft_0402/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
+    #     "ft_0902/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
+    #     "ft_0402_depr/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
+    #     "ft_0402_depr2/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
+    #     "ft_0402/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
+    #     "ft_0902/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
+    #     "ft_0402_depr/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
+    #     "ft_0402_depr2/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
+    #     "ft_0402/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
+    #     "ft_0902/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
+    #     "ft_0402_depr/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
+    #     "ft_0402_depr2/mistral": "mistralai/Mistral-7B-Instruct-v0.3"}
 
     print("Is this even running?")
-    base_dir = "/anvme/workspace/v106be21-arr_workspace_december"
+    base_dir = "/home/vault/v106be/v106be21/"
 
     # Load samples from the study's samples folder
     samples = read_json(os.path.join(base_dir, "implicit_data", "samples.json"))
@@ -449,7 +447,7 @@ if __name__ == "__main__":
         golds = read_json(os.path.join(base_dir, "implicit_data", "gold_standard.json"))
         train_samples = get_samples({idx: samples[idx] for idx in data_splits["train"]}, context=True, gold=golds, nli=True)
         dev_samples = get_samples({idx: samples[idx] for idx in data_splits["dev"]}, context=True, gold=golds, nli=True)
-        fine_tune_instruction_lm(train_samples, dev_samples, args.model, os.path.join(base_dir, "ft_0902", model_names[args.model]))
+        fine_tune_instruction_lm(train_samples, dev_samples, args.model, args.config, args.lora_config, seed=42, tune=True)
         
     else:
         split_samples = {idx: samples[idx] for idx in data_splits[args.data_split]}
@@ -486,34 +484,33 @@ if __name__ == "__main__":
             pre_model = AutoModelForCausalLM.from_pretrained(
                                                     args.model, 
                                                     device_map="auto", 
-                                                    quantization_config=bnb_config,
-                                                    #attn_implementation="flash_attention_2",
-                                                    token="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")
+                                                    quantization_config=bnb_config)
 
             print("Loaded Mistral model and tokenizer…")
             model = (pre_model, tokenizer)
             api_keys = ""
             classify = classify_samples_mixtral
         else:
-            if "ft" in args.model:
-                base_name = ft_base[args.model]
-                model_name = model_names[base_name]
-                tokenizer = AutoTokenizer.from_pretrained(base_name, use_fast=True)
+            # if "ft" in args.model:
+            #     base_name = ft_base[args.model]
+            #     model_name = model_names[base_name]
+            #     tokenizer = AutoTokenizer.from_pretrained(base_name, use_fast=True)
+# 
+            #     model = AutoModelForCausalLM.from_pretrained(
+            #         base_name,
+            #         device_map="auto",          # puts layers on available GPUs/CPU automatically
+            #         # load_in_8bit=True,         # optional, matches your training config
+            #         trust_remote_code=True
+            #     )
+# 
+            #     # Attach the LoRA weights
+            #     full_model = PeftModel.from_pretrained(model, args.model)
+            # else:
+            full_model = args.model
+            model_name = model_names[args.model]
+            # Load the tokenizer
+            tokenizer = AutoTokenizer.from_pretrained(full_model, use_fast=True)
 
-                model = AutoModelForCausalLM.from_pretrained(
-                    base_name,
-                    device_map="auto",          # puts layers on available GPUs/CPU automatically
-                    # load_in_8bit=True,         # optional, matches your training config
-                    trust_remote_code=True
-                )
-
-                # Attach the LoRA weights
-                full_model = PeftModel.from_pretrained(model, args.model)
-            else:
-                full_model = args.model
-                model_name = model_names[args.model]
-                # Load the tokenizer
-                tokenizer = AutoTokenizer.from_pretrained(full_model, use_fast=True)
             if tokenizer.pad_token is None:
                 tokenizer.pad_token = tokenizer.eos_token
             # tokenizer = AutoTokenizer.from_pretrained(args.model, token="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")
@@ -525,14 +522,15 @@ if __name__ == "__main__":
                 # device="cuda",
                 torch_dtype=torch.bfloat16,
                 # quantization_config=bnb_config,
-                token=access_token,
+                token=os.getenv("ACCESS_TOKEN")
+,
                 temperature=0.01
             )
-            print("Loaded Mistral model and tokenizer…")
+            print("Loaded model and tokenizer…")
             api_keys = ""
             classify = classify_samples_huggingface
 
-        out_dir = os.path.join(base_dir, 'predictions', "classification", args.data_split, model_name)
+        out_dir = os.path.join(base_dir, "classifying_implicit_meaning", 'predictions', "classification", args.data_split, model_name)
         os.makedirs(out_dir, exist_ok=True)
 
         print("Here now…")

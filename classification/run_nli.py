@@ -33,7 +33,7 @@ def run_nli_model(model_name: str, ph_pairs: list, out_file: str):
     for ph_pair in ph_pairs:
         idx, premise, hypothesis = ph_pair
         # Encode as a pair
-        inputs = tokenizer.encode_plus(premise, hypothesis, return_tensors="pt", truncation=True)
+        inputs = tokenizer(premise, hypothesis, return_tensors="pt", truncation=True)
 
         # Get logits
         outputs = model(**inputs)
@@ -63,28 +63,28 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    base_dir = "/anvme/workspace/v106be21-arr_workspace_december/predictions/nli"
+    base_dir = "/home/vault/v106be/v106be21/"
     models = {
         "facebook/bart-large-mnli": "bart", 
         "roberta-large-mnli": "roberta", 
         "MoritzLaurer/deberta-v3-large-zeroshot-v2.0": "deberta",
-        "nli-ft/fine-tuned_bart_large_c": "bart",
-        "nli-ft/fine-tuned_roberta_large_c": "roberta",
-        "nli-ft/fine-tuned_deberta_large_c": "deberta"
+        "fine_tuned_models/fine-tuned_bart_large_c": "bart",
+        "fine_tuned_models/fine-tuned_roberta_large_c": "roberta",
+        "fine_tuned_models/fine-tuned_deberta_large_c": "deberta"
         }
 
-    data_splits = read_json(os.path.join(args.data_splits, "splits.json"))
-    samples = read_json(os.path.join(args.data_splits, "samples.json"))
+    data_splits = read_json(os.path.join(base_dir, args.data_splits, "splits.json"))
+    samples = read_json(os.path.join(base_dir, args.data_splits, "samples.json"))
     if args.fine_tune:
-        golds = read_json(os.path.join(args.data_splits, "gold_standard.json"))
+        golds = read_json(os.path.join(base_dir, args.data_splits, "gold_standard.json"))
         train_samples = get_samples({idx: samples[idx] for idx in data_splits["train"]}, args.context, golds, nli=True)
         dev_samples = get_samples({idx: samples[idx] for idx in data_splits["dev"]}, args.context, golds, nli=True)
-        fine_tune_models(train_samples, dev_samples, args.model_name, args.out_file, args.binary, nli=True)
+        fine_tune_models(train_samples, dev_samples, args.model_name, args.out_file, args.binary, nli=True, tune=True)
     else:
         if args.out_of_domain:
             test_samples = get_samples({idx: samples[idx] for idx in data_splits["out_of_domain_test"]}, args.context)
         else:
             test_samples = get_samples({idx: samples[idx] for idx in data_splits["test"]}, args.context)
 
-        out_file = os.path.join(base_dir, "out_of_domain_test" if args.out_of_domain else "test", models[args.model_name], args.out_file)
+        out_file = os.path.join(base_dir, "classifying_implicit_meaning", "predictions", "nli", "out_of_domain_test" if args.out_of_domain else "test", models[args.model_name], args.out_file)
         run_nli_model(args.model_name, test_samples, out_file)

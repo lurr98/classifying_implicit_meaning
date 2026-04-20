@@ -1,7 +1,9 @@
-import argparse, json, re, os, sys
-import matplotlib.pyplot as plt
+import argparse
+import json
+import re
+import os
 from plot_script import plot_confusion_matrix
-from sklearn.metrics import f1_score, accuracy_score, confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import f1_score, accuracy_score
 from sklearn.metrics import precision_recall_fscore_support as score
 from collections import defaultdict
 from typing import Union
@@ -209,7 +211,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    base_dir = "/anvme/workspace/v106be21-arr_workspace_december"
+    base_dir = "/home/vault/v106be/v106be21/"
     ood = "out_of_domain_test" if "out_of_domain_test" in args.preds_dir else "test"
 
     with open(os.path.join(base_dir, "implicit_data", "id2topic.json"), "r") as jsn:
@@ -227,22 +229,22 @@ if __name__ == "__main__":
         nli = "classification"
 
     try:
-        with open(os.path.join(base_dir, "evaluation", nli, args.evaluation_dict), "r") as ev:
+        with open(os.path.join(base_dir, "classifying_implicit_meaning", "evaluation", nli, args.evaluation_dict), "r") as ev:
             evaluation = json.load(ev)
     except FileNotFoundError:
         evaluation = {}
     
-    save_eval_names = [[] for _ in os.listdir(os.path.join(base_dir, "predictions", nli, args.preds_dir))]
+    save_eval_names = [[] for _ in os.listdir(os.path.join(base_dir, "classifying_implicit_meaning", "predictions", nli, args.preds_dir))]
     
-    mistake_path = os.path.join(base_dir, "evaluation", nli, args.mistake) if args.mistake else False 
+    mistake_path = os.path.join(base_dir, "classifying_implicit_meaning", "evaluation", nli, args.mistake) if args.mistake else False 
 
 
-    for i, file in enumerate(os.listdir(os.path.join(base_dir, "predictions", nli, args.preds_dir))):
+    for i, file in enumerate(os.listdir(os.path.join(base_dir, "classifying_implicit_meaning", "predictions", nli, args.preds_dir))):
 
         if not file.endswith(".json"):
             continue
             
-        with open(os.path.join(base_dir, "predictions", nli, args.preds_dir, file), "r") as preds:
+        with open(os.path.join(base_dir, "classifying_implicit_meaning", "predictions", nli, args.preds_dir, file), "r") as preds:
             predictions = json.load(preds)
 
         if args.second_pred:
@@ -257,22 +259,23 @@ if __name__ == "__main__":
             cc_evaluation_name = evaluation_name + "_cc"
             save_eval_names[i].append(cc_evaluation_name)
     
-            new_evaluation = evaluate(cc_targets, predictions, evaluation, cc_evaluation_name, os.path.join(base_dir, "evaluation", nli, "plots", f"cm_{ood}_{cc_evaluation_name}.png") if args.plot_name else "", args.second_pred, mistake_path)
+            new_evaluation = evaluate(cc_targets, predictions, evaluation, cc_evaluation_name, os.path.join(base_dir, "classifying_implicit_meaning", "evaluation", "plots", f"cm_{ood}_{cc_evaluation_name}.png") if args.plot_name else "", args.second_pred, mistake_path)
     
         if args.topics:
             for topic in set(id2topic.values()):
                 topic_targets = get_topic_cases(targets, id2topic, topic)
                 topic_evaluation_name = evaluation_name + f"_{topic}"
                 save_eval_names[i].append(topic_evaluation_name)
-    # 
-                new_evaluation = evaluate(topic_targets, predictions, evaluation, topic_evaluation_name, os.path.join(base_dir, "evaluation", nli, "plots", f"cm_{ood}_{topic_evaluation_name}_{args.preds_dir.split('/')[-1]}" + ".png") if args.plot_name else "", args.second_pred, mistake_path)
+     
+                new_evaluation = evaluate(topic_targets, predictions, evaluation, topic_evaluation_name, os.path.join(base_dir, "classifying_implicit_meaning", "evaluation", "plots", f"cm_{ood}_{topic_evaluation_name}_{args.preds_dir.split('/')[-1]}" + ".png") if args.plot_name else "", args.second_pred, mistake_path)
                 if new_evaluation:
-                    print(f"Saving to {os.path.join(base_dir, 'evaluation', nli, ood, args.evaluation_dict)}")
-                    with open(os.path.join(base_dir, "evaluation", nli, ood, args.evaluation_dict), "w") as ed:
+                    print(f"Saving to {os.path.join(base_dir, 'classifying_implicit_meaning', 'evaluation', ood, args.evaluation_dict)}")
+                    with open(os.path.join(base_dir, "classifying_implicit_meaning", "evaluation", ood, args.evaluation_dict), "w") as ed:
                         json.dump(new_evaluation, ed)
     
-        new_evaluation = evaluate(targets, predictions, evaluation, evaluation_name, os.path.join(base_dir, "evaluation", nli, "plots", f"cm_{ood}_{evaluation_name}_{args.preds_dir.split('/')[-1]}.png") if args.plot_name else "", args.second_pred, mistake_path)
+        new_evaluation = evaluate(targets, predictions, evaluation, evaluation_name, os.path.join(base_dir, "classifying_implicit_meaning", "evaluation", "plots", f"cm_{ood}_{evaluation_name}_{args.preds_dir.split('/')[-1]}.png") if args.plot_name else "", args.second_pred, mistake_path)
 
-    print(f"Saving to {os.path.join(base_dir, 'evaluation', nli, ood, args.evaluation_dict)}")
-    with open(os.path.join(base_dir, "evaluation", nli, ood, args.evaluation_dict), "w") as ed:
+    print(f"Saving to {os.path.join(base_dir, 'classifying_implicit_meaning', 'evaluation', ood, args.evaluation_dict)}")
+    # if evaluation file exists, update it, otherwise create it
+    with open(os.path.join(base_dir, "classifying_implicit_meaning", "evaluation", ood, args.evaluation_dict), "w") as ed:
         json.dump(new_evaluation, ed)
