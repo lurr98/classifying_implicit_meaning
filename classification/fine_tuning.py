@@ -113,155 +113,42 @@ def tokenize_causal(batch, tokenizer, max_length=512):
     return tokenized
 
 
+def trial_visualization():
 
-# def fine_tune_models(
-#     train_samples: list,
-#     dev_samples: list,
-#     model_name: str,
-#     out_folder: str,
-#     binary: bool,
-#     nli: bool,
-#     seed: int = 42,
-# ):
-#     # -------------------------------
-#     # Tokenization functions
-#     # -------------------------------
-#     def tokenize_nli(batch):
-#         return tokenizer(
-#             batch["premise"],
-#             batch["hypothesis"],
-#             truncation=True,
-#             padding=False,
-#         )
-# 
-#     def tokenize_instruction(batch):
-#         return tokenizer(
-#             batch["prompt"],
-#             truncation=True,
-#             padding=False,
-#         )
-# 
-#     # -------------------------------
-#     # Metrics
-#     # -------------------------------
-#     def metrics(eval_pred):
-#         logits, labels = eval_pred
-#         if isinstance(logits, tuple):
-#             logits = logits[0]
-#         preds = np.argmax(logits, axis=-1)
-#         return metric.compute(predictions=preds, references=labels)
-# 
-#     # -------------------------------
-#     # Reproducibility
-#     # -------------------------------
-#     random.seed(seed)
-#     np.random.seed(seed)
-#     torch.manual_seed(seed)
-#     torch.cuda.manual_seed_all(seed)
-# 
-#     # -------------------------------
-#     # Dataset
-#     # -------------------------------
-#     ds = build_huggingface_ds(train_samples, dev_samples, nli)
-# 
-#     num_labels = 2 if binary else 3
-# 
-#     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
-#     if tokenizer.pad_token is None:
-#         tokenizer.pad_token = tokenizer.eos_token
-#         # model.config.pad_token_id = tokenizer.pad_token_id
-# 
-# 
-#     # -------------------------------
-#     # Model + encoding
-#     # -------------------------------
-#     if nli:
-#         # === NLI MODELS (BART / DeBERTa / RoBERTa) ===
-#         model = AutoModelForSequenceClassification.from_pretrained(
-#             model_name,
-#             num_labels=num_labels,
-#             id2label=id2label,
-#             label2id=label2id,
-#             ignore_mismatched_sizes=True,
-#         )
-# 
-#         model.config.use_cache = False
-#         encoded_ds = ds.map(tokenize_nli, batched=True)
-# 
-#     else:
-#         # === INSTRUCTION MODELS (LLaMA / Mixtral / Mistral) ===
-#         model = AutoModelForSequenceClassification.from_pretrained(
-#             model_name,
-#             num_labels=num_labels,
-#             id2label=id2label,
-#             label2id=label2id,
-#             ignore_mismatched_sizes=True,
-#             # device_map="auto",
-#             trust_remote_code=True,
-#         )
-# 
-#         # memory-safe finetuning
-#         model = prepare_model_for_kbit_training(model)
-#         model.config.use_cache = False
-#         model.gradient_checkpointing_enable()
-# 
-#         model = get_peft_model(model, lora_config)
-# 
-#         encoded_ds = ds.map(tokenize_instruction, batched=True)
-# 
-#     # -------------------------------
-#     # Logging sanity checks
-#     # -------------------------------
-#     print(f"Train size: {len(encoded_ds['train'])}")
-#     print(f"Dev size: {len(encoded_ds['dev'])}")
-#     print(f"Labels: {model.config.num_labels}")
-# 
-#     # -------------------------------
-#     # Trainer setup
-#     # -------------------------------
-#     collator = DataCollatorWithPadding(tokenizer)
-#     metric = evaluate.load("accuracy")
-# 
-#     args = TrainingArguments(
-#         output_dir=out_folder,
-#         learning_rate=2e-5,
-#         per_device_train_batch_size=2,
-#         per_device_eval_batch_size=4,
-#         gradient_accumulation_steps=8,
-#         num_train_epochs=1,  # IMPORTANT for instruction models
-#         eval_strategy="epoch",
-#         save_strategy="epoch",
-#         load_best_model_at_end=True,
-#         metric_for_best_model="accuracy",
-#         greater_is_better=True,
-#         warmup_ratio=0.1,
-#         weight_decay=0.01,
-#         # bf16=True,
-#         logging_steps=50,
-#         save_total_limit=2,
-#         report_to="none",
-#     )
-# 
-#     trainer = Trainer(
-#         model=model,
-#         args=args,
-#         train_dataset=encoded_ds["train"],
-#         eval_dataset=encoded_ds["dev"],
-#         tokenizer=tokenizer,
-#         data_collator=collator,
-#         compute_metrics=metrics,
-#     )
-# 
-#     # -------------------------------
-#     # Train & save
-#     # -------------------------------
-#     trainer.train()
-#     trainer.save_model(out_folder)
-#     tokenizer.save_pretrained(out_folder)
-# 
-#     print(f"Saved model to {out_folder}")
+    import optuna
+    from optuna.visualization.matplotlib import (
+        plot_optimization_history,
+        plot_intermediate_values,
+        plot_param_importances
+    )
+    import matplotlib.pyplot as plt
 
-def fine_tune_models(train_samples: list, dev_samples: list, model: str, out_folder: str, binary: bool, nli: bool, seed: int=42) -> None:
+    # Load the study from RDB storage
+    storage = optuna.storages.RDBStorage("sqlite:///optuna_trials.db")
+
+    study = optuna.load_study(
+        study_name="transformers_optuna_study",
+        storage=storage
+    )
+
+    # Plot optimization history
+    ax1 = plot_optimization_history(study)
+    plt.show()
+    ax1.figure.savefig("optimization_history.png")
+
+    # Plot intermediate values (if using pruning and intermediate reports)
+    ax2 = plot_intermediate_values(study)
+    plt.show()
+    ax2.figure.savefig("intermediate_values.png")
+
+    # Plot parameter importances
+    ax3 = plot_param_importances(study)
+    plt.show()
+    ax3.figure.savefig("param_importances.png")
+
+
+
+def fine_tune_models(train_samples: list, dev_samples: list, model_name: str, out_folder: str, binary: bool, nli: bool, seed: int=42, tune: bool=False) -> None:
 
 
     def tokenize_nli(batch):
@@ -270,25 +157,15 @@ def fine_tune_models(train_samples: list, dev_samples: list, model: str, out_fol
     def tokenize_cl(batch):
         return tokenizer(batch["prompt"], truncation=True, padding=False)
 
-    # def metrics(eval_pred):
-    # 
-    #     logits, labels = eval_pred
-# 
-    #     # get logits tensor from tuple
-    #     if isinstance(logits, tuple):
-    #         logits = logits[0]
-# 
-    #     predictions = np.argmax(logits, axis=-1)
-# 
-    #     return metric.compute(predictions=predictions, references=labels)
-
-
-    def metrics(eval_pred):
+    def compute_metrics(eval_pred):
         logits, labels = eval_pred
         if isinstance(logits, tuple):
             logits = logits[0]
         preds = np.argmax(logits, axis=-1)
-        return metric.compute(predictions=preds, references=labels, average="macro")
+        return metric.compute(predictions=preds, references=labels)
+    
+    def compute_objective(metrics):
+        return metrics["eval_accuracy"]
 
     # Set seeds for reproducibility
     random.seed(seed)
@@ -304,27 +181,29 @@ def fine_tune_models(train_samples: list, dev_samples: list, model: str, out_fol
     else:
         num_labels = 3
 
-    tokenizer = AutoTokenizer.from_pretrained(model, use_fast=True)
+    tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
     # tokenizer.pad_token = tokenizer.eos_token
     
     if nli:
-        model = AutoModelForSequenceClassification.from_pretrained(model, num_labels=num_labels, id2label=id2label, label2id=label2id, ignore_mismatched_sizes=True)
+        model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=num_labels, id2label=id2label, label2id=label2id, ignore_mismatched_sizes=True)
         encoded_ds = ds.map(tokenize_nli, batched=True)
         model.config.use_cache = False
 
-        for p in model.model.decoder.parameters():
-            p.requires_grad = False
+        try:
+            for p in model.model.decoder.parameters():
+                p.requires_grad = False
+        except AttributeError:
+            pass
 
 
     else:
         model = AutoModelForSequenceClassification.from_pretrained(
-            model,
+            model_name,
             num_labels=num_labels,
             id2label=id2label,
             label2id=label2id,
             ignore_mismatched_sizes=True,
             quantization_config=bnb_config,
-            device_map="auto",
             trust_remote_code=True
         )   
         # Required for stable k-bit training
@@ -342,8 +221,121 @@ def fine_tune_models(train_samples: list, dev_samples: list, model: str, out_fol
     print(f"Model num_labels: {model.config.num_labels}")
 
     collator = DataCollatorWithPadding(tokenizer=tokenizer, padding=True)
-    # metric = evaluate.load("accuracy")
-    metric = evaluate.load("f1")
+    metric = evaluate.load("accuracy")
+    # metric = evaluate.load("f1")
+
+    if tune:
+        import optuna
+        from optuna.storages import RDBStorage
+
+        # Define persistent storage
+        storage = RDBStorage("sqlite:///optuna_trials.db")
+
+        study = optuna.create_study(
+            study_name="transformers_optuna_study",
+            direction="maximize",
+            storage=storage,
+            load_if_exists=True
+        )
+
+        def model_init():
+            return AutoModelForSequenceClassification.from_pretrained(
+                model_name,
+                num_labels=num_labels,
+                id2label=id2label,
+                label2id=label2id,
+                ignore_mismatched_sizes=True,
+                trust_remote_code=True
+            )
+
+        def optuna_hp_space(trial):
+            return {
+                "learning_rate": trial.suggest_float("learning_rate", 1e-6, 1e-4, log=True),
+                "per_device_train_batch_size": trial.suggest_categorical(
+                    "per_device_train_batch_size", [2, 4, 8]
+                ),
+                "per_device_eval_batch_size": trial.suggest_categorical(
+                    "per_device_eval_batch_size", [2, 4, 8]
+                ),
+                "gradient_accumulation_steps": trial.suggest_categorical(
+                    "gradient_accumulation_steps", [2, 4, 8]
+                ),
+                "warmup_ratio": trial.suggest_float("warmup_ratio", 0.0, 0.3),
+                "weight_decay": trial.suggest_float("weight_decay", 0.0, 0.3),
+                "label_smoothing_factor": trial.suggest_float("label_smoothing_factor", 0.0, 0.3),
+            }
+
+        ht_args = TrainingArguments(
+            output_dir=out_folder,
+
+            num_train_epochs=3,
+
+            eval_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+            metric_for_best_model="accuracy",
+            greater_is_better=True,
+
+            bf16=True,
+            logging_steps=50,
+            save_total_limit=1,
+            dataloader_num_workers=4,
+            run_name="transformers_optuna_study"
+        )
+
+        ht_trainer = Trainer(
+            model_init=model_init,
+            args=ht_args,
+            train_dataset=encoded_ds["train"],
+            eval_dataset=encoded_ds["dev"],
+            tokenizer=tokenizer,
+            data_collator=collator,
+            compute_metrics=compute_metrics,
+            callbacks=[EarlyStoppingCallback(early_stopping_patience=1)]
+        )
+
+        best_run = ht_trainer.hyperparameter_search(
+            direction="maximize",
+            backend="optuna",
+            hp_space=optuna_hp_space,
+            n_trials=5,
+            compute_objective=compute_objective,
+            study_name="transformers_optuna_study",
+            storage="sqlite:///optuna_trials.db",
+            load_if_exists=True
+        )
+
+        print(best_run)
+
+        best_hparams = best_run.hyperparameters
+
+
+        args = TrainingArguments(
+            output_dir=out_folder,
+
+            learning_rate=best_hparams["learning_rate"],
+            per_device_train_batch_size=best_hparams["per_device_train_batch_size"],
+            per_device_eval_batch_size=best_hparams["per_device_eval_batch_size"],
+            gradient_accumulation_steps=best_hparams["gradient_accumulation_steps"],   # effective batch = 16
+
+            num_train_epochs=3,
+
+            eval_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+            metric_for_best_model="accuracy",
+            greater_is_better=True,
+
+            warmup_ratio=best_hparams["warmup_ratio"],
+            weight_decay=best_hparams["weight_decay"],
+            label_smoothing_factor=best_hparams["label_smoothing_factor"],
+
+            bf16=True,
+            logging_steps=50,
+            save_total_limit=1,
+            dataloader_num_workers=4,
+            run_name="transformers_best_params"
+        )
 
     # args = TrainingArguments(
     #     output_dir=out_folder,
@@ -371,33 +363,34 @@ def fine_tune_models(train_samples: list, dev_samples: list, model: str, out_fol
     #     report_to="none"
     # )
 
-    # BART BEST
-    args = TrainingArguments(
-        output_dir=out_folder,
+    else:
+        # BART BEST
+        args = TrainingArguments(
+            output_dir=out_folder,
 
-        learning_rate=3e-6,
-        per_device_train_batch_size=2,
-        per_device_eval_batch_size=4,
-        gradient_accumulation_steps=8,   # effective batch = 16
+            learning_rate=3e-6,
+            per_device_train_batch_size=2,
+            per_device_eval_batch_size=4,
+            gradient_accumulation_steps=8,   # effective batch = 16
 
-        num_train_epochs=3,
+            num_train_epochs=3,
 
-        eval_strategy="epoch",
-        save_strategy="epoch",
-        load_best_model_at_end=True,
-        metric_for_best_model="f1",
-        greater_is_better=True,
+            eval_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+            metric_for_best_model="accuracy",
+            greater_is_better=True,
 
-        warmup_ratio=0.1,
-        weight_decay=0.01,
-        label_smoothing_factor=0.0,
+            warmup_ratio=0.1,
+            weight_decay=0.01,
+            label_smoothing_factor=0.0,
 
-        bf16=True,
-        logging_steps=50,
-        save_total_limit=1,
-        dataloader_num_workers=4,
-        report_to="none"
-    )
+            bf16=True,
+            logging_steps=50,
+            save_total_limit=1,
+            dataloader_num_workers=4,
+            report_to="none"
+        )
 
 
 
@@ -434,7 +427,7 @@ def fine_tune_models(train_samples: list, dev_samples: list, model: str, out_fol
         eval_dataset=encoded_ds["dev"],
         tokenizer=tokenizer,
         data_collator=collator,
-        compute_metrics=metrics,
+        compute_metrics=compute_metrics,
         callbacks=[EarlyStoppingCallback(early_stopping_patience=1)]
     )
 
