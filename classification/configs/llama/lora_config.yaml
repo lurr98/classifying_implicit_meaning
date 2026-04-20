@@ -1,0 +1,10 @@
+# LoRA configuration for fine-tuning DeepSeek or similar models
+r: 8 # 16  # rank of the low-rank matrices
+lora_alpha: 16 # 32  # scaling factor for LoRA updates
+target_modules:  # modules to apply LoRA to (common for causal LMs)
+  - "q_proj"
+  - "v_proj"
+lora_dropout: 0.0  # dropout rate for LoRA layers
+bias: "none"  # whether to train biases ("none", "all", or "lora_only")
+task_type: "CAUSAL_LM"  # task type for the model
+inference_mode: false  # set to true during inference to save memory

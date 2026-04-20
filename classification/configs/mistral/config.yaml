@@ -1,0 +1,20 @@
+output_dir: "classification/fine_tuned_models/mistral"
+load_best_model_at_end: True
+completion_only_loss: True
+label_smoothing_factor: 0.1
+metric_for_best_model: "f1"   # or "accuracy"
+greater_is_better: True      
+num_train_epochs: 3
+save_total_limit: 1                  # keep only 1 checkpoint
+eval_strategy: "steps"               # or "epoch"
+save_strategy: "steps"                # or "epoch"
+eval_steps: 500
+save_steps: 500
+lr_scheduler_type: "cosine"
+warmup_ratio: 0.1
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+  # Set according to your GPU memory capacity
+learning_rate: 0.000005  # Common starting point for fine-tuning
+logging_steps: 10  # Frequency of logging training metrics
+bf16: True
