@@ -35547,63 +35547,6 @@
         ],
         "revision": "for predatory people"
     },
-    "3qkGZ4xENs": {
-        "rest_tree": [
-            {
-                "id": "1",
-                "parent": "4",
-                "relname": "Joint",
-                "text": "Additionally, the primer prevents foundation from settling into your wrinkles"
-            }
-        ],
-        "revision": "and keeping the foundation in place",
-        "relevant_segment": {
-            "id": "2",
-            "parent": "4",
-            "relname": "Joint",
-            "text": "and keeping the foundation in place."
-        }
-    },
-    "tmHCBDD8Yd": {
-        "rest_tree": [
-            {
-                "id": "2",
-                "parent": "5",
-                "relname": "span",
-                "text": "extend your liner out beyond the outer edges of your eye"
-            },
-            {
-                "id": "3",
-                "parent": "2",
-                "relname": "Enablement",
-                "text": "to create a wing."
-            }
-        ],
-        "revision": "For a bolder look",
-        "relevant_segment": {
-            "id": "1",
-            "parent": "5",
-            "relname": "Cause",
-            "text": "For a bolder look,"
-        }
-    },
-    "G3zpPS32Jp": {
-        "rest_tree": [
-            {
-                "id": "1",
-                "parent": "4",
-                "relname": "Joint",
-                "text": "The furniture will go back into storage"
-            },
-            {
-                "id": "2",
-                "parent": "4",
-                "relname": "Joint",
-                "text": "and carpets in your igloo wont be saved!"
-            }
-        ],
-        "revision": "will go back into storage"
-    },
     "1Mp7k8SVGX": {
         "rest_tree": [
             {

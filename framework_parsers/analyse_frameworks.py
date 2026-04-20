@@ -170,7 +170,7 @@ def plot_relations(
 
     # Keep only the most frequent relations (top‑8) – same behaviour as before
     df["Total"] = df.sum(axis=1)
-    df = df.sort_values("Total", ascending=False).drop(columns="Total").head(8)
+    df = df.sort_values("Total", ascending=False).drop(columns="Total").head(5)
 
     # ------------------------------------------------------------------ #
     # 5️⃣  Plot – grouped bars
@@ -419,7 +419,7 @@ if __name__ == "__main__":
     parser.add_argument('-m', '--mistakes', nargs='?', help='the file containing the mistakes')
     parser.add_argument('-perc', '--percent', action='store_true')
 
-    base_dir = "/anvme/workspace/v106be21-arr_workspace_december/analysis/frameworks"
+    base_dir = "/home/vault/v106be/v106be21/classifying_implicit_meaning/framework_parsers"
 
     args = parser.parse_args()
 
