@@ -1,12 +1,10 @@
-import os, sys, random
+import os, sys
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
 
-import torch, argparse, json, evaluate, random
-import numpy as np
-from datasets import Dataset, DatasetDict
-from core.utils import read_json, write_json, load_impres_data, transform_inli_data
-from fine_tuning import get_samples, build_huggingface_ds, fine_tune_models
-from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline, AutoModelForCausalLM, AutoConfig, DataCollatorWithPadding, TrainingArguments, Trainer
+import torch, argparse, random
+from core.utils import read_json, write_json
+from fine_tuning import get_samples, fine_tune_models
+from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoConfig
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 

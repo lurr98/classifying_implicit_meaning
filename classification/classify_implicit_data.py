@@ -9,7 +9,11 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["PYTORCH_ALLOC_CONF"] = "expandable_segments:True"
 os.environ["PYTORCH_ALLOC_CONF"] = "max_split_size_mb:512"
 
-import argparse, json, torch, spacy, pickle, re, sys
+import argparse
+import torch
+import spacy
+import re
+import sys
 import numpy as np
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -90,7 +94,6 @@ def adj_baseline(item_dict: dict, adj_label: str, not_adj_label: str, x: int) ->
 def classify_samples_gpt(item_dict: dict, instructions: str, model: str, api_file: str, out_path: str) -> dict:
 
     api_key = api_file[0].split(' ')[-1].strip()
-    print(api_key)
 
     predictions = {}
 
@@ -422,20 +425,6 @@ if __name__ == "__main__":
         "classification/fine_tuned_models/mistral": "mistral", 
         "Qwen/Qwen3-4B-Instruct-2507": "qwen"}
 
-    # ft_base = {
-    #     "ft_0402/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
-    #     "ft_0902/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
-    #     "ft_0402_depr/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
-    #     "ft_0402_depr2/llama": "meta-llama/Meta-Llama-3-8B-Instruct", 
-    #     "ft_0402/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
-    #     "ft_0902/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
-    #     "ft_0402_depr/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
-    #     "ft_0402_depr2/qwen": "Qwen/Qwen3-4B-Instruct-2507", 
-    #     "ft_0402/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
-    #     "ft_0902/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
-    #     "ft_0402_depr/mistral": "mistralai/Mistral-7B-Instruct-v0.3",
-    #     "ft_0402_depr2/mistral": "mistralai/Mistral-7B-Instruct-v0.3"}
-
     print("Is this even running?")
     base_dir = "/home/vault/v106be/v106be21/"
 
@@ -491,21 +480,6 @@ if __name__ == "__main__":
             api_keys = ""
             classify = classify_samples_mixtral
         else:
-            # if "ft" in args.model:
-            #     base_name = ft_base[args.model]
-            #     model_name = model_names[base_name]
-            #     tokenizer = AutoTokenizer.from_pretrained(base_name, use_fast=True)
-# 
-            #     model = AutoModelForCausalLM.from_pretrained(
-            #         base_name,
-            #         device_map="auto",          # puts layers on available GPUs/CPU automatically
-            #         # load_in_8bit=True,         # optional, matches your training config
-            #         trust_remote_code=True
-            #     )
-# 
-            #     # Attach the LoRA weights
-            #     full_model = PeftModel.from_pretrained(model, args.model)
-            # else:
             full_model = args.model
             model_name = model_names[args.model]
             # Load the tokenizer
