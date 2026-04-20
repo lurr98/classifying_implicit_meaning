@@ -1,11 +1,11 @@
 import os, sys, random
 sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir))
 
-import torch, argparse, json, evaluate, random
+import torch, argparse, json, evaluate, random, yaml
 import numpy as np
 from collections import Counter
+from sklearn.metrics import accuracy_score, f1_score
 from datasets import Dataset, DatasetDict
-from core.utils import read_json, write_json, load_impres_data, transform_inli_data
 from trl import SFTConfig, SFTTrainer
 from transformers import (pipeline, AutoTokenizer, AutoModelForSequenceClassification,
                           Trainer, TrainingArguments, DataCollatorWithPadding, AutoModelForCausalLM, DataCollatorForLanguageModeling, BitsAndBytesConfig, EarlyStoppingCallback)
@@ -13,21 +13,11 @@ from peft import LoraConfig, get_peft_model, TaskType, prepare_model_for_kbit_tr
 import evaluate
 
 # The `evaluate` library ships with a ready‑made accuracy metric
-accuracy_metric = evaluate.load("accuracy")
+# accuracy_metric = evaluate.load("accuracy")
 
 
 bnb_config = BitsAndBytesConfig(
     load_in_8bit=True
-)
-
-lora_config = LoraConfig(
-    task_type=TaskType.CAUSAL_LM,
-    r=32,
-    lora_alpha=64,
-    target_modules = [
-        "q_proj", "k_proj", "v_proj", "o_proj",
-        "gate_proj", "up_proj", "down_proj"
-    ]
 )
 
 prompt = "Would altering the second text by inserting the text in angle brackets meaningfully change most readers understand the text? Answer with Yes or No.\n"
@@ -60,8 +50,10 @@ def compute_metrics(eval_pred):
     # `label_ids` already contains the lower‑cased "yes"/"no"
     true_norm = label_ids
 
-    return {"accuracy": accuracy_metric.compute(predictions=pred_norm,
-                                                references=true_norm)["accuracy"]}
+    return {
+        "accuracy": accuracy_score(true_norm, pred_norm),
+        "f1": f1_score(true_norm, pred_norm, average="weighted"),
+    }
 
 
 def upsample_minority(samples, label_index=3, seed=42):
@@ -119,11 +111,17 @@ def build_huggingface_ds(train_samples: list, dev_samples: list):
     return ds
 
 
+def compute_objective(metrics):
+    return metrics["eval_accuracy"]
+
+
 def fine_tune_instruction_lm(train_samples,
     dev_samples,
     model_name,
-    out_folder,
-    seed=42
+    config,
+    lora_config,
+    seed=42,
+    tune=False
     ):
 
     # ---- seeds ----
@@ -132,6 +130,9 @@ def fine_tune_instruction_lm(train_samples,
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
 
+    # load YAML configs
+    with open(config, 'r') as f:
+        train_config = yaml.safe_load(f)
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
 
     if tokenizer.pad_token is None:
@@ -148,6 +149,9 @@ def fine_tune_instruction_lm(train_samples,
     model.config.use_cache = False
     model.gradient_checkpointing_enable()
 
+    with open(lora_config, 'r') as f:
+        lora_params = yaml.safe_load(f)
+    lora_config = LoraConfig(**lora_params)
     model = get_peft_model(model, lora_config)
 
     # model, tokenizer = setup_chat_format(model=model, tokenizer=tokenizer)
@@ -160,32 +164,7 @@ def fine_tune_instruction_lm(train_samples,
 
     print(ds["train"][0])
 
-    # Configure the SFTTrainer
-    sft_config = SFTConfig(
-        output_dir=out_folder,
-        load_best_model_at_end=True,
-        completion_only_loss=True,
-        label_smoothing_factor=0.1,
-        metric_for_best_model="accuracy",   # or "accuracy"
-        greater_is_better=True,      
-        num_train_epochs=3,
-        save_total_limit=1,                  # keep only 1 checkpoint
-        eval_strategy="steps",               # or "epoch"
-        save_strategy="steps",                # or "epoch"
-        eval_steps=500,
-        save_steps=500,
-        lr_scheduler_type="cosine",
-        warmup_ratio=0.1,
-        # max_steps=1000,  # Adjust based on dataset size and desired training duration
-        per_device_train_batch_size=4,
-        gradient_accumulation_steps=2,
-          # Set according to your GPU memory capacity
-        learning_rate=5e-6,  # Common starting point for fine-tuning
-        logging_steps=10,  # Frequency of logging training metrics
-        # save_steps=100,  # Frequency of saving model checkpoints
-        # eval_strategy="steps",  # Evaluate the model at regular intervals
-        # eval_steps=50,  # Frequency of evaluation
-    )
+    sft_config = SFTConfig(**train_config)
 
     # Initialize the SFTTrainer
     trainer = SFTTrainer(
@@ -199,7 +178,12 @@ def fine_tune_instruction_lm(train_samples,
     )
 
     trainer.train()
-    trainer.save_model(out_folder)
+    model = trainer.model
+    merged_model = model.merge_and_unload()
+    out_folder = train_config['output_dir']
+
+    merged_model.save_pretrained(out_folder)
+    # trainer.save_model(out_folder)
     tokenizer.save_pretrained(out_folder)
 
     print(f"Saved instruction-tuned classifier to {out_folder}")
