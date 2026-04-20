@@ -1,2 +1,18 @@
 .cache
 __pycache__
+
+fine_tuned_models
+evaluation
+out
+predictions
+
+.venv
+.env
+
+optuna_trials.db
+
+# slurm scripts
+slurm_script_nli.sh
+slurm_script_llama.sh
+slurm_script_qwen.sh
+slurm_script_mistral.sh
