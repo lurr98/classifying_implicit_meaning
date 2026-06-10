@@ -18,7 +18,7 @@ This directory contains datasets for implicit meaning classification.
 
 - **id2topic.json**: Topic mapping—maps sample IDs to topic categories (e.g., "health").
 
-- **gold_standard_topics_subcategories.json**: Topic and subcategory annotations for gold standard samples.
+- **gold_standard_topics_subcategories.json**: Gold standard with additional subcategory annotations for samples from topic study.
     - *Label Distribution:* Index 0 = "Implicit", Index 1 = "New Information" 
     - *Confidence Score:* Index 0 = 1-2, Index 1 = 3, Index 2 = 4-5 
     - *Categories Distribution:* Index 0 = "Context", Index 1 = "Logical Reasoning", Index 2 = "Background Knowledge", Index 3 = "Other" 
