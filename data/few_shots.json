@@ -1,0 +1,3854 @@
+{
+  "128": {
+    "No": {
+      "UgaM9cdyFo": {
+        "Original": "Measure how long you want yours to be.",
+        "Revised": "Measure how long you want yours to be <when you get the roof up>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "8ic4aL_9Fi": {
+        "Original": "If you are still unsure of how to get there contact the rangers with the contact information at the bottom.",
+        "Revised": "If you are still unsure of how to get there contact the rangers with the contact information at the bottom <of your specific towers website>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "xOYdVLPTf9": {
+        "Original": "Check with your local government.",
+        "Revised": "Check with your local government <to know for sure>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "Fv_g6eHXUy": {
+        "Original": "This generally resulted in rapid mold growth when mold spores (seeds) landed on Trex and it received moisture.",
+        "Revised": "This generally resulted in rapid mold growth when mold spores (seeds) landed on Trex and it received moisture, <resulting in ugly black mold stains>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "JLd1G14L70": {
+        "Original": "You need some tools and instruments! You can use a toy doctor's kit, or you can make your own using kitchen utensils, pencils, blocks, other toys, or anything else that you can pretend to be medical instruments.",
+        "Revised": "You need some tools and instruments <to be a doctor>! You can use a toy doctor's kit, or you can make your own using kitchen utensils, pencils, blocks, other toys, or anything else that you can pretend to be medical instruments.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      },
+      "g7cLZRyhNd": {
+        "Original": "You can also get Vitamin D through natural sunlight.",
+        "Revised": "You can also get Vitamin D through natural sunlight, <as this triggers your body to produce the vitamin>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "YurVa4ZlgP": {
+        "Original": "Get your eyebrows tinted by a professional cosmetologist to ensure they look their best.",
+        "Revised": "Get your eyebrows tinted by a professional cosmetologist <at a brow bar or a beauty salon> to ensure they look their best.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "oPDRdbDsQR": {
+        "Original": "Type your full name that you want displayed to you (and only you).",
+        "Revised": "Type your full name that you want displayed to you (and only you) <into the Full Name box>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          1
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          5
+        ]
+      },
+      "AVsHBsFm7E": {
+        "Original": "Go especially slow if there are potholes or weather conditions that might make the roads in a residential area slippery.",
+        "Revised": "Go especially slow if there are potholes or weather conditions that might make the roads in a residential area slippery or <difficult to see>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "1z_VnuNAsx": {
+        "Original": "Enter the field as a social worker or counselor.",
+        "Revised": "Enter the field as a social worker or counselor <based on your focus>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          4
+        ]
+      },
+      "P3CHXqNBAs": {
+        "Original": "Avoid clingy, see-through, revealing clothing.",
+        "Revised": "Avoid clingy, see-through, revealing clothing, <whatever your gender>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          3,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          3,
+          3
+        ]
+      },
+      "Irc6jCrjOy": {
+        "Original": "You may need administrative privileges in order to run command prompt.",
+        "Revised": "You may need administrative privileges in order to run command prompt <so youa re better off logging in as an administrator>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          3,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      },
+      "HP6vZ962J8": {
+        "Original": "This will show a translucent version of the frames before and after the one you're working on.",
+        "Revised": "This will show a translucent version of the frames before and after the one you're working on <which makes it much easier to animate>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "dNWmj7sL-w": {
+        "Original": "Keep the temperature between 75 and 84 degrees Fahrenheit.",
+        "Revised": "Keep the temperature <of your tanks> between 75 and 84 degrees Fahrenheit.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "eCzt1HpaSv": {
+        "Original": "Cold and flu medicines that contain a pain reliever like acetaminophen will not only relieve your body aches, but will also treat all the other symptoms of your flu.",
+        "Revised": "Cold and flu medicines that contain a pain reliever like acetaminophen will not only relieve your body aches, but will also treat all the other symptoms of your flu, <such as fever and headache>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "V5Wo7hBCsY": {
+        "Original": "If you find yourself frequently reaching for the salt shaker while cooking your food or at the table, it may be time to cut back.",
+        "Revised": "If you find yourself frequently reaching for the salt shaker while cooking your food or at the table, it may be time to cut back, <especially if you're trying to lower your sodium intake>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "0s-jIKwqqV": {
+        "Original": "Understand the importance of karma.",
+        "Revised": "Understand the importance of karma and <good deeds>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "kr-JCrExiR": {
+        "Original": "Simple examples are alcohol, drugs etc, but anything else that makes you lose control.",
+        "Revised": "Simple examples are alcohol, drugs etc, but anything else that makes you lose control <of your mind>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "j1Rx2wgDo9": {
+        "Original": "This can help you feel confident in yourself and your abilities.",
+        "Revised": "This can help you feel confident in yourself and your abilities <by knowing that you're making an impact>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "Y4eZ2qzrqM": {
+        "Original": "Exercise your hands with a stress ball.",
+        "Revised": "Exercise your hands with a stress ball <to keep your fingers strong>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "lJNybu4re3": {
+        "Original": "Here is how to do that.",
+        "Revised": "Here is how to do that, <all on the computer>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          4
+        ]
+      },
+      "bQmUYC4I-y": {
+        "Original": "Note if the web is not sticky.",
+        "Revised": "Note if the web is not sticky <to the touch>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "Ow-yQ7gcgy": {
+        "Original": "Coat your hands in cornstarch before handling fondant.",
+        "Revised": "Coat your hands in cornstarch before handling fondant <to prevent finger prints>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          6
+        ]
+      },
+      "2KyUJ6kt0v": {
+        "Original": "Stay off your phone.",
+        "Revised": "Stay off your phone <as much as possible>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "VtTvLljOzM": {
+        "Original": "A round brush gives you more control over each section of hair.",
+        "Revised": "A round brush gives you more control over each section of hair <since it grips from all sides>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          3,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "sLs0f0pXBL": {
+        "Original": "Look towards the ground, or pretend that you're focused on something important when you walk by, do not make eye contact at all.",
+        "Revised": "Look towards the ground, or pretend that you're focused on something important when you walk by, <like a poster or billboard> do not make eye contact at all.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "U3aCFOi-TA": {
+        "Original": "Capping a gas line is not a complicated thing to do.",
+        "Revised": "Capping a gas line is not a complicated thing to do <if you do it correctly>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "juLZ4IgfyW": {
+        "Original": "It is perfectly possible to do this through the fly zip of your pants or shorts; just stick the bottle in, part your labia slightly and hold the bottle up close to your urethral orifice.",
+        "Revised": "It is perfectly possible to do this through the fly zip of your pants or shorts; just stick the bottle in, part your labia slightly and hold the bottle up close to your urethral orifice, <making sure to close your eyes and enjoy>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "WHTvvfz63s": {
+        "Original": "Take some time to find a perfume that you like.",
+        "Revised": "Take some time to find a perfume that you like <so you can smell nice too>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          7,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "Q2Md3buYTi": {
+        "Original": "Knowing how to pack is important, so that you can have the best time possible",
+        "Revised": "Knowing how to pack is important, so that you can have the best time possible <with your entire group>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          3,
+          3
+        ]
+      },
+      "cCX8xxZN6V": {
+        "Original": "Use a firm mattress in baby's crib.",
+        "Revised": "Use a firm mattress in baby's crib <to prevent suffocation>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "BeL1cWYtRL": {
+        "Original": "From the start, learn as much about the game as you can.",
+        "Revised": "From the start <to the end>, learn as much about the game as you can.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "16ltt5xwji": {
+        "Original": "Afterward, rub your sand paper over them by hand while applying pressure.",
+        "Revised": "Afterward, rub your sand paper <side to side> over them by hand while applying pressure.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "NY9aaBn47E": {
+        "Original": "Spray the cat with a squirt of water.",
+        "Revised": "Spray the cat <when he climbs on the curtains> with a squirt of water.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "2WIMCxYPAN": {
+        "Original": "A stubby stenciling brush works best and creates an \"orange peel\" finish.",
+        "Revised": "A stubby stenciling brush works best and creates an \"orange peel\" finish, <a slightly bumpy texture that mimics the texture of an orange peel>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          7,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          7
+        ]
+      },
+      "oPlmom0DcY": {
+        "Original": "Send him a meme.",
+        "Revised": "Send him a meme <when you're online>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "bej829BK--": {
+        "Original": "Learn about the procedure.",
+        "Revised": "Learn about the procedure <you will be having>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "ADh1tfXItf": {
+        "Original": "It's painful, but a gymnast will have to get used to it!",
+        "Revised": "It's painful, but a gymnast <at every level> will have to get used to it!",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          4
+        ]
+      },
+      "QBAJ9Y7tkr": {
+        "Original": "Turn the unit a quarter turn counterclockwise to remove from its mounting.",
+        "Revised": "Turn the unit a quarter turn counterclockwise to remove <the old unit> from its mounting.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "qDgKKPWaat": {
+        "Original": "Fold to look like a small half sheet of paper.",
+        "Revised": "Fold <one more time> to look like a small half sheet of paper.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      },
+      "JNltOf_vmC": {
+        "Original": "When selecting your wooden spoon, always look for those made from hardwood.",
+        "Revised": "When selecting your wooden spoon, always look for those made from hardwood, <such as teak>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          1
+        ],
+        "Confidence Distribution": [
+          2,
+          1,
+          2
+        ]
+      },
+      "aKgfnoc7kv": {
+        "Original": "Take some time to look for organizations whose mission you agree with.",
+        "Revised": "Take some time to look for organizations whose mission you agree with <before supporting them>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "0gdKe4_Yq-": {
+        "Original": "If it's steaming up every minute, leave just a bit of water in and look downward while moving your head from side to side.",
+        "Revised": "If it's steaming up every minute, leave just a bit of water in and <once in a while> look downward while moving your head from side to side.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "rPJSA3-XTB": {
+        "Original": "Pick a clean and quiet study area with few distractions.",
+        "Revised": "Pick a clean and quiet study area with few distractions <to study biology>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      },
+      "WKOzdjP3ED": {
+        "Original": "Use a styling comb with small teeth to part your hair off to one side.",
+        "Revised": "Use a styling comb with small teeth, <such as a rat tail comb>, to part your hair off to one side.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "PbVnhEGWWI": {
+        "Original": "Buy a pair of large pants, big enough that you can pull them down to your belly-button and fit a head and arm in one leg.",
+        "Revised": "Buy a pair of large pants, big enough that you can pull them down <over your head> to your belly-button and fit a head and arm in one leg.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "nhnQY7txXa": {
+        "Original": "Coconut milk naturally separates with the cream at the top and the coconut water at the bottom.",
+        "Revised": "Coconut milk naturally separates with the cream at the top and the coconut water at the bottom, <so separating them should be fairly easy>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          7,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          5
+        ]
+      },
+      "snFYTA3OxT": {
+        "Original": "Find common threads that link you to the person or people.",
+        "Revised": "Find common threads that link you to the person or people <in the crowd>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      },
+      "UpO_twMqGF": {
+        "Original": "Have your transportation arrangements sorted.",
+        "Revised": "Have your transportation arrangements sorted and <readily accessible>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          4
+        ]
+      },
+      "1QvCeht1Ok": {
+        "Original": "Now shave your legs as you normally do.",
+        "Revised": "Now shave your legs as you normally do <if you were in a shower>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "qgygbcfATi": {
+        "Original": "Jam a peg into the back rear hole to secure it.",
+        "Revised": "Jam a peg into the back rear hole to secure it <using your fingers>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "D0ZGxdm4hv": {
+        "Original": "Some will have to renew every year.",
+        "Revised": "Some will have to renew every year, <while others are less frequent>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          3,
+          1
+        ]
+      },
+      "z_ojsUb7Uh": {
+        "Original": "The Temple Run was the final challenge.",
+        "Revised": "The Temple Run was the final challenge <on all shows>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          2
+        ],
+        "Confidence Distribution": [
+          1,
+          2,
+          4
+        ]
+      },
+      "9iiOUvDUd4": {
+        "Original": "Just rub the pumice stone around the area with hair.",
+        "Revised": "Just rub the pumice stone around the area with hair <you want to remove>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "woharn5z9O": {
+        "Original": "Consider giving your dog medication.",
+        "Revised": "Consider giving your dog medication <under a vet's recommendation>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "xA9hcbWqr6": {
+        "Original": "If you check in online, see if the website lists upgrade rates.",
+        "Revised": "If you check in online <before you go to the airport>, see if the website lists upgrade rates.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "6n6d-j8l5e": {
+        "Original": "Open the phone book.",
+        "Revised": "Open the phone book <to the index>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "9WMTgOOxv3": {
+        "Original": "Japanese meal time etiquette is pretty easy to learn.",
+        "Revised": "Japanese meal time etiquette is pretty easy to learn, <if you remember a few simple rules>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "PmWPn51LGM": {
+        "Original": "If your skin still tingles or burns after cleaning it, immediately seek emergency medical help.",
+        "Revised": "If your skin still tingles or burns after cleaning it, immediately seek emergency medical help <through an ambulance>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "uVKsvNNk0E": {
+        "Original": "You're not alone, anymore, and things are going to get easier.",
+        "Revised": "You're not alone, anymore, and things are going to get easier <from this point onward>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "KQUzfGPfxk": {
+        "Original": "This is a great option for themed weddings.",
+        "Revised": "This is a great option for themed weddings <where costumes are encouraged>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "iGX_Wi4MuJ": {
+        "Original": "Speak as softly and as little as possible.",
+        "Revised": "Speak as softly and as little as possible <as you are recovering>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "k__8uU8sXY": {
+        "Original": "Simply straighten your hair and brush it back.",
+        "Revised": "Simply straighten your hair <with a hair straightener> and brush it back.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "M22mELUnWD": {
+        "Original": "Invite her to go for ice cream.",
+        "Revised": "Invite her to go for ice cream or <something similar you both like>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      }
+    },
+    "Yes": {
+      "5SjY1K5V3A": {
+        "Original": "Alternately, avoid foods whose nutrition labels list fat content and sodium levels that are through the roof.",
+        "Revised": "Alternately, avoid foods whose nutrition labels list fat content and sodium levels that are through the roof, <especially when the serving size is relatively small>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "WzJMmJ0jDb": {
+        "Original": "Buy all the tickets with your group at once, so that your seats are together.",
+        "Revised": "Buy all the tickets with your group at once, so that your seats are together <or if it's general admission, agree to stick together once you've arrived at the venue>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          3
+        ]
+      },
+      "ibiHeQW5B5": {
+        "Original": "Or, try online dating to meet someone new.",
+        "Revised": "Or, try online dating to meet someone new <after your initial grieving process is over>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "6J6776_j3c": {
+        "Original": "Not everyone is born a chef, but most will find that some element of cooking is relaxing.",
+        "Revised": "Not everyone is born a chef, but most will find that some element of cooking is relaxing and <that stimulates a bit of creativity>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          1,
+          2
+        ]
+      },
+      "WSLJz6Xis3": {
+        "Original": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health.",
+        "Revised": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health, <especially if being with them puts you in danger>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "r0vORFyynQ": {
+        "Original": "Noodle also pulls on a football helmet during the video.",
+        "Revised": "Noodle also pulls on a football helmet and <a small keyboard> during the video.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "4ODVe0O9HI": {
+        "Original": "If they are not soft enough, just put in 2 pieces of bread",
+        "Revised": "If they are not soft enough, just put in 2 pieces of bread <the next time>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      },
+      "2BpdIFnkDI": {
+        "Original": "Watch for dry mouth.",
+        "Revised": "Watch for dry mouth or <excess saliva>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "P3vMfuuP07": {
+        "Original": "Both parents must apply at the same time if they are both still alive.",
+        "Revised": "Both parents must apply at the same time if they are both still alive and <still married>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          6
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "rYiZo3h_Hm": {
+        "Original": "If your child continues to have problems with homework performance or also has problems with school in general, you may want to have them evaluated for a learning disability.",
+        "Revised": "If your child continues to have problems with homework performance or also has problems with school in general, you may want to have them evaluated for a learning disability or <have a conference with their teacher>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "BsLYrDSwir": {
+        "Original": "There is a lot of confusion today in the church over what it means to be anointed and who is anointed etc. In the Old Testament, kings and priests were physically anointed with oil.",
+        "Revised": "There is a lot of confusion today in the church over what it means to be anointed and who is anointed etc. In the Old Testament, kings and priests were physically anointed with oil <to show that they were set apart>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "E63EKdSS1M": {
+        "Original": "Grow some facial hair just like Jeff's if you're old enough.",
+        "Revised": "Grow some facial hair just like Jeff's or <your own design> if you're old enough.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "G9NAtcTDdP": {
+        "Original": "While there are many ways of making this delicious dish, here are a few takes on a delightful dessert.",
+        "Revised": "While there are many ways of making this delicious dish, here are a few takes on a delightful dessert <that work well at home>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          2,
+          2
+        ]
+      },
+      "42VzJ7CqZ5": {
+        "Original": "Teak is a great option because it absorbs very little liquid.",
+        "Revised": "Teak is a great option because it absorbs very little liquid, <so it will take longer for the board to wear out>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "YWZf6-4rGy": {
+        "Original": "Dried fruit, to taste",
+        "Revised": "Dried fruit, to taste, <preferably organic and unsulphured>",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          6
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          5
+        ]
+      },
+      "93naJo6DKP": {
+        "Original": "Note that while calico tends to be cheaper than pure cotton, it also tends to be somewhat coarser.",
+        "Revised": "Note that while calico tends to be cheaper than pure cotton, it also tends to be somewhat coarser, <making it more ideal for bags or other items that need to be durable>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          2
+        ]
+      },
+      "UbuiQXZ5ES": {
+        "Original": "This way, you have less time to think about what your friend is up to and you'll also be making your life more interesting to others.",
+        "Revised": "This way, you have less time to think about what your friend is up to and you'll also be making your life more interesting to others <so you can attract more friends in the future>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "t9Q6dGdyVx": {
+        "Original": "Your desire to be around your boyfriend a lot might come from some unresolved needs or issues you have.",
+        "Revised": "Your desire to be around your boyfriend a lot might come from some unresolved needs or issues you have, <such as codependency>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          2
+        ]
+      },
+      "1hF3nPDMof": {
+        "Original": "This will give your vehicle enough time to reach optimal temperatures for your coolant and oils as well as optimal pressure for your catalytic converter.",
+        "Revised": "This will give your vehicle enough time to reach optimal temperatures for your coolant and oils as well as optimal pressure for your catalytic converter, <ensuring that you'll get an accurate reading>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          2
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          2
+        ]
+      },
+      "lveBcJV7hj": {
+        "Original": "Talk with your date.",
+        "Revised": "Talk with your date <about their interests>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "2U02_ibfBF": {
+        "Original": "Wait until the smoker reaches the correct temperature.",
+        "Revised": "Wait until the smoker reaches the correct temperature and <the wood chips are smoking visibly>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "aBDBR1lHN3": {
+        "Original": "You should also watch your dog for any difficulties defecating.",
+        "Revised": "You should also watch your dog for any difficulties defecating or <if they have instances of diarrhea>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "KfRze--yoX": {
+        "Original": "Give him one last goodbye kiss.",
+        "Revised": "Give him one last goodbye kiss <if you feel its appropriate>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          2
+        ]
+      },
+      "1xo9so28GN": {
+        "Original": "Micro braids can be done with natural hair or by adding extensions.",
+        "Revised": "Micro braids and <box braids> can be done with natural hair or by adding extensions.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          6
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          5
+        ]
+      },
+      "IUuEf4GECt": {
+        "Original": "Use an orange stick to gently push back the cuticles.",
+        "Revised": "Use an orange stick, <rather than a metal pusher>, to gently push back the cuticles.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "rbEkUYJ46J": {
+        "Original": "You can use a gentle dish soap and hot water to clean the cage, but make sure you thoroughly wash every part of the cage.",
+        "Revised": "You can use a gentle dish soap or <antibacterial soap> and hot water to clean the cage, but make sure you thoroughly wash every part of the cage.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "MSOZ7pquk1": {
+        "Original": "You can also drink a glass of pure tart cranberry juice every day to further reduce your risk for urinary tract infections.",
+        "Revised": "You can also drink a glass of pure tart cranberry juice or <blueberry juice> every day to further reduce your risk for urinary tract infections.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "ofUGkiBC33": {
+        "Original": "Try guided meditation tapes to help you.",
+        "Revised": "Try guided meditation tapes or <a meditation app> to help you.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          4
+        ]
+      },
+      "SwXC_VVkXm": {
+        "Original": "Tell your child that their actions are hurtful to others around them, and instruct them on how to behave appropriately.",
+        "Revised": "Tell your child that their actions are hurtful to others around them, and instruct them on how to behave appropriately <by redirecting them to the coping skills that you've taught them>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          6
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          5
+        ]
+      },
+      "AO98PcaCqQ": {
+        "Original": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas",
+        "Revised": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas <on each side>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          6
+        ]
+      },
+      "kboZYH85ib": {
+        "Original": "i want to find my sister her name is Patrica Harris our grandmother Josephine low died in about 1977 in Jamaica Queens NY Abilene Harris is there any way that i can find her on Facebook",
+        "Revised": "i want to find my sister her name is Patrica Harris our grandmother Josephine low died in about 1977 in Jamaica Queens NY Abilene Harris is there any way that i can find her on Facebook <our father died in jail>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          1,
+          2
+        ]
+      },
+      "YxPqUTMWJh": {
+        "Original": "Check that your post is level, and make any final adjustments before moving on.",
+        "Revised": "Check that your post is level <with a bubble level>, and make any final adjustments before moving on.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          1,
+          3
+        ]
+      },
+      "MjUoTzYRYr": {
+        "Original": "Many washing machines will ruin the shape of your hat, but you can clean it thoroughly right in your kitchen.",
+        "Revised": "Many washing machines will ruin the shape of your hat, but you can clean it thoroughly right in your kitchen <using your dishwasher>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "8OkK4BiFJc": {
+        "Original": "Because they are public, they are quickly accepted by courts of law.",
+        "Revised": "Because they are public, they are quickly accepted by courts of law, <though not all states will have them>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          1,
+          1,
+          2
+        ]
+      },
+      "D0Hv8esrsJ": {
+        "Original": "Use a carrying sack.",
+        "Revised": "Use a carrying sack <for longer trips>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "LNFMkjVb7T": {
+        "Original": "Searching the database is not unlike using a search engine, but there are a couple ways to do it that will help you get more out of your research.",
+        "Revised": "Searching the database is not unlike using a search engine, but there are a couple ways to do it that will help you get more out of your research, <such as using advanced search settings>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "Dx6Qe7RHeV": {
+        "Original": "If you do not want to complain by phone, you can file a complaint online.",
+        "Revised": "If you do not want to complain by phone and <you have a tracking number>, you can file a complaint online.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "u9kWTtJFzG": {
+        "Original": "It's in the bottom-left corner of the \"New Message\" window.",
+        "Revised": "It's <a red button> in the bottom-left corner of the \"New Message\" window.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          2
+        ]
+      },
+      "YTU4F7xyxB": {
+        "Original": "Lay on your back with your knees in a table top position.",
+        "Revised": "Lay on your back with your knees in a table top position <with your arms crossed over your chest>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          2
+        ]
+      },
+      "Litr0T2eZa": {
+        "Original": "As the person coming to work in the United States, you have certain rights.",
+        "Revised": "As the person coming to work in the United States or <other country>, you have certain rights.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "uNUmxhbNVr": {
+        "Original": "This could be a great downfall and could be considered shallow.",
+        "Revised": "This could be a great downfall and could be considered shallow <whether you meant it that way or not>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "bYm-fGJgqk": {
+        "Original": "Keeping the water moving will reduce mosquitoes, a popular attraction for toads.",
+        "Revised": "Keeping the water moving <with a fountain or waterfall> will reduce mosquitoes, a popular attraction for toads.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "nSaHO4qnZ0": {
+        "Original": "Take your medication with milk or food.",
+        "Revised": "Take your medication with milk or food <to reduce nausea>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "qZZdMT1FlB": {
+        "Original": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA).",
+        "Revised": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA) or <other appropriate organisation>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "F6gLtMJGus": {
+        "Original": "Create a cat eye.",
+        "Revised": "Create a cat eye <with contrasting colors>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          2
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          2
+        ]
+      },
+      "jLNXTYKxMc": {
+        "Original": "Planning school dances requires a lot of time, effort, and organization, but they're tons of fun! Before you can carry out the plans, however, you have to get them approved by the staff.",
+        "Revised": "Planning school dances requires a lot of time, effort, and organization, but they're tons of fun! Before you can carry out the plans, however, you have to get them approved by the staff and <the principal>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "hzJGK6OTS1": {
+        "Original": "It's mean, it's disgusting, and it's against the law.",
+        "Revised": "It's mean, it's disgusting, and it's against the law <in some countries>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          1,
+          2
+        ]
+      },
+      "mFiZcK5PLi": {
+        "Original": "To disable the Indexing Service, open My Computer, Right-click on the hard drive and click on the check box to clear the check mark next to \"Allow indexing service to index this hard drive for faster searching\".",
+        "Revised": "To disable the Indexing Service, open My Computer, Right-click on the hard drive, <go to properties> and click on the check box to clear the check mark next to \"Allow indexing service to index this hard drive for faster searching\".",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "yPn2pOVQEL": {
+        "Original": "Treat the newly exposed leather.",
+        "Revised": "Treat the newly exposed leather <with leather conditioner>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "h-A8Lne5_X": {
+        "Original": "its can be used if you are trying to make any online payments",
+        "Revised": "its can be used if you are trying to make any online payments and <blocking websites>",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "Dy-uqHexY-": {
+        "Original": "Make sure you can back them up.",
+        "Revised": "Make sure you can back them up <with reliable sources>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "-SldsJc8Vz": {
+        "Original": "You can technically sow the seeds into October (for flowering the next year); however, you must give the seedlings enough time to grow and fortify themselves a bit so they can withstand the cold winter months.",
+        "Revised": "You can technically sow the seeds into October (for flowering the next year), <depending on your area's climate>; however, you must give the seedlings enough time to grow and fortify themselves a bit so they can withstand the cold winter months.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          2
+        ]
+      },
+      "LiyhXxze9p": {
+        "Original": "To do this, simply compare your cost per visit with other prices.",
+        "Revised": "To do this, simply compare your cost per visit with other prices, <especially periodic special offers>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          1,
+          3
+        ]
+      },
+      "TVMPblMnXZ": {
+        "Original": "There are email list cleaning service providers that have put in years of practices to help you they can range from being low priced to very high.",
+        "Revised": "There are email list cleaning service providers <like listaudits and strikiron> that have put in years of practices to help you they can range from being low priced to very high.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "LDA7flo1r1": {
+        "Original": "Make sure to remove any dust or particles before applying new coats.",
+        "Revised": "Make sure to remove any dust or particles <with a tack cloth> before applying new coats.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "5TwIZnlqce": {
+        "Original": "It'll take some time, but in the end you will be free of their false friendliness.",
+        "Revised": "It'll take some time, but in the end you will be free of their false friendliness <to jaylin keith the jerk i know>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "t2y0SApQwx": {
+        "Original": "Acrobat Reader 7 works with Linux, so feel free to use it if you just need to view a PDF, or print one out.",
+        "Revised": "Acrobat Reader 7 works with Linux, so feel free to use it if you just need to view a PDF, or print one out, or <try evince or xpdf instead>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "cpxOJlMdK7": {
+        "Original": "\" You can also try unflavored Greek yogurt.",
+        "Revised": "\" You can also try unflavored Greek yogurt <mixed with a little bit of confectioners sugar>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          7
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "RLtnXg7L3M": {
+        "Original": "You can be an abuse counselor with an associate's degree, a bachelor's degree, or a master's degree.",
+        "Revised": "You can be an abuse counselor with <a high school degree>, an associate's degree, a bachelor's degree, or a master's degree.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          4
+        ]
+      },
+      "at8Aoud7f0": {
+        "Original": "Nitrogen improves the foliage, potassium improves the flowering of a plant, and phosphorus improves the roots and fruit.",
+        "Revised": "Nitrogen improves the foliage, potassium improves the flowering and <overall strength> of a plant, and phosphorus improves the roots and fruit.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          3
+        ]
+      },
+      "Le9hEhDSK_": {
+        "Original": "The key to avoiding addiction is setting achievable goals for yourself and not letting exercise become an obsession.",
+        "Revised": "The key to avoiding addiction <while also doing regular physical activity> is setting achievable goals for yourself and not letting exercise become an obsession.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          1
+        ]
+      },
+      "f5aYkvhLcF": {
+        "Original": "But, some pimples form deep in the surface of the skin, appearing like large reddish bumps.",
+        "Revised": "But, some pimples form deep in the surface of the skin, appearing like large reddish bumps <with no head>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          1
+        ]
+      },
+      "1o-eGVSqzc": {
+        "Original": "Your 4th and 6th strings should now be the same pitch.",
+        "Revised": "Your 4th and 6th strings should now be the same pitch, <one octave apart>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          6
+        ],
+        "Confidence Distribution": [
+          1,
+          3,
+          2
+        ]
+      },
+      "t0S_nksiWC": {
+        "Original": "For recurrent mold issues, spray on a mold preventative while the belt is still damp.",
+        "Revised": "For recurrent mold issues, spray on a mold preventative <such as Concrobium or Mold Armor> while the belt is still damp.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      }
+    }
+  },
+  "64": {
+    "No": {
+      "PmWPn51LGM": {
+        "Original": "If your skin still tingles or burns after cleaning it, immediately seek emergency medical help.",
+        "Revised": "If your skin still tingles or burns after cleaning it, immediately seek emergency medical help <through an ambulance>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "sLs0f0pXBL": {
+        "Original": "Look towards the ground, or pretend that you're focused on something important when you walk by, do not make eye contact at all.",
+        "Revised": "Look towards the ground, or pretend that you're focused on something important when you walk by, <like a poster or billboard> do not make eye contact at all.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "xOYdVLPTf9": {
+        "Original": "Check with your local government.",
+        "Revised": "Check with your local government <to know for sure>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "2WIMCxYPAN": {
+        "Original": "A stubby stenciling brush works best and creates an \"orange peel\" finish.",
+        "Revised": "A stubby stenciling brush works best and creates an \"orange peel\" finish, <a slightly bumpy texture that mimics the texture of an orange peel>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          7,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          7
+        ]
+      },
+      "j1Rx2wgDo9": {
+        "Original": "This can help you feel confident in yourself and your abilities.",
+        "Revised": "This can help you feel confident in yourself and your abilities <by knowing that you're making an impact>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "P3CHXqNBAs": {
+        "Original": "Avoid clingy, see-through, revealing clothing.",
+        "Revised": "Avoid clingy, see-through, revealing clothing, <whatever your gender>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          3,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          3,
+          3
+        ]
+      },
+      "9WMTgOOxv3": {
+        "Original": "Japanese meal time etiquette is pretty easy to learn.",
+        "Revised": "Japanese meal time etiquette is pretty easy to learn, <if you remember a few simple rules>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "Q2Md3buYTi": {
+        "Original": "Knowing how to pack is important, so that you can have the best time possible",
+        "Revised": "Knowing how to pack is important, so that you can have the best time possible <with your entire group>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          3,
+          3
+        ]
+      },
+      "YurVa4ZlgP": {
+        "Original": "Get your eyebrows tinted by a professional cosmetologist to ensure they look their best.",
+        "Revised": "Get your eyebrows tinted by a professional cosmetologist <at a brow bar or a beauty salon> to ensure they look their best.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "UpO_twMqGF": {
+        "Original": "Have your transportation arrangements sorted.",
+        "Revised": "Have your transportation arrangements sorted and <readily accessible>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          4
+        ]
+      },
+      "8ic4aL_9Fi": {
+        "Original": "If you are still unsure of how to get there contact the rangers with the contact information at the bottom.",
+        "Revised": "If you are still unsure of how to get there contact the rangers with the contact information at the bottom <of your specific towers website>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "aKgfnoc7kv": {
+        "Original": "Take some time to look for organizations whose mission you agree with.",
+        "Revised": "Take some time to look for organizations whose mission you agree with <before supporting them>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "VtTvLljOzM": {
+        "Original": "A round brush gives you more control over each section of hair.",
+        "Revised": "A round brush gives you more control over each section of hair <since it grips from all sides>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          3,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "HP6vZ962J8": {
+        "Original": "This will show a translucent version of the frames before and after the one you're working on.",
+        "Revised": "This will show a translucent version of the frames before and after the one you're working on <which makes it much easier to animate>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "uVKsvNNk0E": {
+        "Original": "You're not alone, anymore, and things are going to get easier.",
+        "Revised": "You're not alone, anymore, and things are going to get easier <from this point onward>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "JLd1G14L70": {
+        "Original": "You need some tools and instruments! You can use a toy doctor's kit, or you can make your own using kitchen utensils, pencils, blocks, other toys, or anything else that you can pretend to be medical instruments.",
+        "Revised": "You need some tools and instruments <to be a doctor>! You can use a toy doctor's kit, or you can make your own using kitchen utensils, pencils, blocks, other toys, or anything else that you can pretend to be medical instruments.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      },
+      "KQUzfGPfxk": {
+        "Original": "This is a great option for themed weddings.",
+        "Revised": "This is a great option for themed weddings <where costumes are encouraged>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "M22mELUnWD": {
+        "Original": "Invite her to go for ice cream.",
+        "Revised": "Invite her to go for ice cream or <something similar you both like>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "iGX_Wi4MuJ": {
+        "Original": "Speak as softly and as little as possible.",
+        "Revised": "Speak as softly and as little as possible <as you are recovering>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "PbVnhEGWWI": {
+        "Original": "Buy a pair of large pants, big enough that you can pull them down to your belly-button and fit a head and arm in one leg.",
+        "Revised": "Buy a pair of large pants, big enough that you can pull them down <over your head> to your belly-button and fit a head and arm in one leg.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "1z_VnuNAsx": {
+        "Original": "Enter the field as a social worker or counselor.",
+        "Revised": "Enter the field as a social worker or counselor <based on your focus>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          4
+        ]
+      },
+      "z_ojsUb7Uh": {
+        "Original": "The Temple Run was the final challenge.",
+        "Revised": "The Temple Run was the final challenge <on all shows>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          2
+        ],
+        "Confidence Distribution": [
+          1,
+          2,
+          4
+        ]
+      },
+      "bej829BK--": {
+        "Original": "Learn about the procedure.",
+        "Revised": "Learn about the procedure <you will be having>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "6n6d-j8l5e": {
+        "Original": "Open the phone book.",
+        "Revised": "Open the phone book <to the index>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "U3aCFOi-TA": {
+        "Original": "Capping a gas line is not a complicated thing to do.",
+        "Revised": "Capping a gas line is not a complicated thing to do <if you do it correctly>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "NY9aaBn47E": {
+        "Original": "Spray the cat with a squirt of water.",
+        "Revised": "Spray the cat <when he climbs on the curtains> with a squirt of water.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "1QvCeht1Ok": {
+        "Original": "Now shave your legs as you normally do.",
+        "Revised": "Now shave your legs as you normally do <if you were in a shower>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "WKOzdjP3ED": {
+        "Original": "Use a styling comb with small teeth to part your hair off to one side.",
+        "Revised": "Use a styling comb with small teeth, <such as a rat tail comb>, to part your hair off to one side.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "Ow-yQ7gcgy": {
+        "Original": "Coat your hands in cornstarch before handling fondant.",
+        "Revised": "Coat your hands in cornstarch before handling fondant <to prevent finger prints>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          6
+        ]
+      },
+      "g7cLZRyhNd": {
+        "Original": "You can also get Vitamin D through natural sunlight.",
+        "Revised": "You can also get Vitamin D through natural sunlight, <as this triggers your body to produce the vitamin>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "woharn5z9O": {
+        "Original": "Consider giving your dog medication.",
+        "Revised": "Consider giving your dog medication <under a vet's recommendation>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "qDgKKPWaat": {
+        "Original": "Fold to look like a small half sheet of paper.",
+        "Revised": "Fold <one more time> to look like a small half sheet of paper.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      }
+    },
+    "Yes": {
+      "YTU4F7xyxB": {
+        "Original": "Lay on your back with your knees in a table top position.",
+        "Revised": "Lay on your back with your knees in a table top position <with your arms crossed over your chest>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          2
+        ]
+      },
+      "bYm-fGJgqk": {
+        "Original": "Keeping the water moving will reduce mosquitoes, a popular attraction for toads.",
+        "Revised": "Keeping the water moving <with a fountain or waterfall> will reduce mosquitoes, a popular attraction for toads.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "lveBcJV7hj": {
+        "Original": "Talk with your date.",
+        "Revised": "Talk with your date <about their interests>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "AO98PcaCqQ": {
+        "Original": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas",
+        "Revised": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas <on each side>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          6
+        ]
+      },
+      "2BpdIFnkDI": {
+        "Original": "Watch for dry mouth.",
+        "Revised": "Watch for dry mouth or <excess saliva>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "WSLJz6Xis3": {
+        "Original": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health.",
+        "Revised": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health, <especially if being with them puts you in danger>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "KfRze--yoX": {
+        "Original": "Give him one last goodbye kiss.",
+        "Revised": "Give him one last goodbye kiss <if you feel its appropriate>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          2
+        ]
+      },
+      "mFiZcK5PLi": {
+        "Original": "To disable the Indexing Service, open My Computer, Right-click on the hard drive and click on the check box to clear the check mark next to \"Allow indexing service to index this hard drive for faster searching\".",
+        "Revised": "To disable the Indexing Service, open My Computer, Right-click on the hard drive, <go to properties> and click on the check box to clear the check mark next to \"Allow indexing service to index this hard drive for faster searching\".",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "5SjY1K5V3A": {
+        "Original": "Alternately, avoid foods whose nutrition labels list fat content and sodium levels that are through the roof.",
+        "Revised": "Alternately, avoid foods whose nutrition labels list fat content and sodium levels that are through the roof, <especially when the serving size is relatively small>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "Le9hEhDSK_": {
+        "Original": "The key to avoiding addiction is setting achievable goals for yourself and not letting exercise become an obsession.",
+        "Revised": "The key to avoiding addiction <while also doing regular physical activity> is setting achievable goals for yourself and not letting exercise become an obsession.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          1
+        ]
+      },
+      "LNFMkjVb7T": {
+        "Original": "Searching the database is not unlike using a search engine, but there are a couple ways to do it that will help you get more out of your research.",
+        "Revised": "Searching the database is not unlike using a search engine, but there are a couple ways to do it that will help you get more out of your research, <such as using advanced search settings>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "IUuEf4GECt": {
+        "Original": "Use an orange stick to gently push back the cuticles.",
+        "Revised": "Use an orange stick, <rather than a metal pusher>, to gently push back the cuticles.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "WzJMmJ0jDb": {
+        "Original": "Buy all the tickets with your group at once, so that your seats are together.",
+        "Revised": "Buy all the tickets with your group at once, so that your seats are together <or if it's general admission, agree to stick together once you've arrived at the venue>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          3
+        ]
+      },
+      "G9NAtcTDdP": {
+        "Original": "While there are many ways of making this delicious dish, here are a few takes on a delightful dessert.",
+        "Revised": "While there are many ways of making this delicious dish, here are a few takes on a delightful dessert <that work well at home>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          2,
+          2
+        ]
+      },
+      "6J6776_j3c": {
+        "Original": "Not everyone is born a chef, but most will find that some element of cooking is relaxing.",
+        "Revised": "Not everyone is born a chef, but most will find that some element of cooking is relaxing and <that stimulates a bit of creativity>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          1,
+          2
+        ]
+      },
+      "uNUmxhbNVr": {
+        "Original": "This could be a great downfall and could be considered shallow.",
+        "Revised": "This could be a great downfall and could be considered shallow <whether you meant it that way or not>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "t2y0SApQwx": {
+        "Original": "Acrobat Reader 7 works with Linux, so feel free to use it if you just need to view a PDF, or print one out.",
+        "Revised": "Acrobat Reader 7 works with Linux, so feel free to use it if you just need to view a PDF, or print one out, or <try evince or xpdf instead>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "4ODVe0O9HI": {
+        "Original": "If they are not soft enough, just put in 2 pieces of bread",
+        "Revised": "If they are not soft enough, just put in 2 pieces of bread <the next time>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          5
+        ]
+      },
+      "MSOZ7pquk1": {
+        "Original": "You can also drink a glass of pure tart cranberry juice every day to further reduce your risk for urinary tract infections.",
+        "Revised": "You can also drink a glass of pure tart cranberry juice or <blueberry juice> every day to further reduce your risk for urinary tract infections.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "yPn2pOVQEL": {
+        "Original": "Treat the newly exposed leather.",
+        "Revised": "Treat the newly exposed leather <with leather conditioner>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "rYiZo3h_Hm": {
+        "Original": "If your child continues to have problems with homework performance or also has problems with school in general, you may want to have them evaluated for a learning disability.",
+        "Revised": "If your child continues to have problems with homework performance or also has problems with school in general, you may want to have them evaluated for a learning disability or <have a conference with their teacher>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "at8Aoud7f0": {
+        "Original": "Nitrogen improves the foliage, potassium improves the flowering of a plant, and phosphorus improves the roots and fruit.",
+        "Revised": "Nitrogen improves the foliage, potassium improves the flowering and <overall strength> of a plant, and phosphorus improves the roots and fruit.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          3
+        ]
+      },
+      "93naJo6DKP": {
+        "Original": "Note that while calico tends to be cheaper than pure cotton, it also tends to be somewhat coarser.",
+        "Revised": "Note that while calico tends to be cheaper than pure cotton, it also tends to be somewhat coarser, <making it more ideal for bags or other items that need to be durable>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          2
+        ]
+      },
+      "UbuiQXZ5ES": {
+        "Original": "This way, you have less time to think about what your friend is up to and you'll also be making your life more interesting to others.",
+        "Revised": "This way, you have less time to think about what your friend is up to and you'll also be making your life more interesting to others <so you can attract more friends in the future>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "2U02_ibfBF": {
+        "Original": "Wait until the smoker reaches the correct temperature.",
+        "Revised": "Wait until the smoker reaches the correct temperature and <the wood chips are smoking visibly>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "qZZdMT1FlB": {
+        "Original": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA).",
+        "Revised": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA) or <other appropriate organisation>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "Dy-uqHexY-": {
+        "Original": "Make sure you can back them up.",
+        "Revised": "Make sure you can back them up <with reliable sources>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "5TwIZnlqce": {
+        "Original": "It'll take some time, but in the end you will be free of their false friendliness.",
+        "Revised": "It'll take some time, but in the end you will be free of their false friendliness <to jaylin keith the jerk i know>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "1xo9so28GN": {
+        "Original": "Micro braids can be done with natural hair or by adding extensions.",
+        "Revised": "Micro braids and <box braids> can be done with natural hair or by adding extensions.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          6
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          5
+        ]
+      },
+      "E63EKdSS1M": {
+        "Original": "Grow some facial hair just like Jeff's if you're old enough.",
+        "Revised": "Grow some facial hair just like Jeff's or <your own design> if you're old enough.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "42VzJ7CqZ5": {
+        "Original": "Teak is a great option because it absorbs very little liquid.",
+        "Revised": "Teak is a great option because it absorbs very little liquid, <so it will take longer for the board to wear out>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "1o-eGVSqzc": {
+        "Original": "Your 4th and 6th strings should now be the same pitch.",
+        "Revised": "Your 4th and 6th strings should now be the same pitch, <one octave apart>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          6
+        ],
+        "Confidence Distribution": [
+          1,
+          3,
+          2
+        ]
+      }
+    }
+  },
+  "32": {
+    "No": {
+      "xOYdVLPTf9": {
+        "Original": "Check with your local government.",
+        "Revised": "Check with your local government <to know for sure>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "Q2Md3buYTi": {
+        "Original": "Knowing how to pack is important, so that you can have the best time possible",
+        "Revised": "Knowing how to pack is important, so that you can have the best time possible <with your entire group>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          3,
+          3
+        ]
+      },
+      "aKgfnoc7kv": {
+        "Original": "Take some time to look for organizations whose mission you agree with.",
+        "Revised": "Take some time to look for organizations whose mission you agree with <before supporting them>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "1QvCeht1Ok": {
+        "Original": "Now shave your legs as you normally do.",
+        "Revised": "Now shave your legs as you normally do <if you were in a shower>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "6n6d-j8l5e": {
+        "Original": "Open the phone book.",
+        "Revised": "Open the phone book <to the index>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "NY9aaBn47E": {
+        "Original": "Spray the cat with a squirt of water.",
+        "Revised": "Spray the cat <when he climbs on the curtains> with a squirt of water.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "uVKsvNNk0E": {
+        "Original": "You're not alone, anymore, and things are going to get easier.",
+        "Revised": "You're not alone, anymore, and things are going to get easier <from this point onward>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "HP6vZ962J8": {
+        "Original": "This will show a translucent version of the frames before and after the one you're working on.",
+        "Revised": "This will show a translucent version of the frames before and after the one you're working on <which makes it much easier to animate>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "z_ojsUb7Uh": {
+        "Original": "The Temple Run was the final challenge.",
+        "Revised": "The Temple Run was the final challenge <on all shows>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          2
+        ],
+        "Confidence Distribution": [
+          1,
+          2,
+          4
+        ]
+      },
+      "YurVa4ZlgP": {
+        "Original": "Get your eyebrows tinted by a professional cosmetologist to ensure they look their best.",
+        "Revised": "Get your eyebrows tinted by a professional cosmetologist <at a brow bar or a beauty salon> to ensure they look their best.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "PbVnhEGWWI": {
+        "Original": "Buy a pair of large pants, big enough that you can pull them down to your belly-button and fit a head and arm in one leg.",
+        "Revised": "Buy a pair of large pants, big enough that you can pull them down <over your head> to your belly-button and fit a head and arm in one leg.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "WKOzdjP3ED": {
+        "Original": "Use a styling comb with small teeth to part your hair off to one side.",
+        "Revised": "Use a styling comb with small teeth, <such as a rat tail comb>, to part your hair off to one side.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "KQUzfGPfxk": {
+        "Original": "This is a great option for themed weddings.",
+        "Revised": "This is a great option for themed weddings <where costumes are encouraged>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          6
+        ]
+      },
+      "j1Rx2wgDo9": {
+        "Original": "This can help you feel confident in yourself and your abilities.",
+        "Revised": "This can help you feel confident in yourself and your abilities <by knowing that you're making an impact>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "M22mELUnWD": {
+        "Original": "Invite her to go for ice cream.",
+        "Revised": "Invite her to go for ice cream or <something similar you both like>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "g7cLZRyhNd": {
+        "Original": "You can also get Vitamin D through natural sunlight.",
+        "Revised": "You can also get Vitamin D through natural sunlight, <as this triggers your body to produce the vitamin>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      }
+    },
+    "Yes": {
+      "6J6776_j3c": {
+        "Original": "Not everyone is born a chef, but most will find that some element of cooking is relaxing.",
+        "Revised": "Not everyone is born a chef, but most will find that some element of cooking is relaxing and <that stimulates a bit of creativity>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          1,
+          2
+        ]
+      },
+      "qZZdMT1FlB": {
+        "Original": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA).",
+        "Revised": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA) or <other appropriate organisation>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "AO98PcaCqQ": {
+        "Original": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas",
+        "Revised": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas <on each side>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          6
+        ]
+      },
+      "WzJMmJ0jDb": {
+        "Original": "Buy all the tickets with your group at once, so that your seats are together.",
+        "Revised": "Buy all the tickets with your group at once, so that your seats are together <or if it's general admission, agree to stick together once you've arrived at the venue>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          3
+        ]
+      },
+      "MSOZ7pquk1": {
+        "Original": "You can also drink a glass of pure tart cranberry juice every day to further reduce your risk for urinary tract infections.",
+        "Revised": "You can also drink a glass of pure tart cranberry juice or <blueberry juice> every day to further reduce your risk for urinary tract infections.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "5SjY1K5V3A": {
+        "Original": "Alternately, avoid foods whose nutrition labels list fat content and sodium levels that are through the roof.",
+        "Revised": "Alternately, avoid foods whose nutrition labels list fat content and sodium levels that are through the roof, <especially when the serving size is relatively small>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "G9NAtcTDdP": {
+        "Original": "While there are many ways of making this delicious dish, here are a few takes on a delightful dessert.",
+        "Revised": "While there are many ways of making this delicious dish, here are a few takes on a delightful dessert <that work well at home>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          3
+        ],
+        "Confidence Distribution": [
+          1,
+          2,
+          2
+        ]
+      },
+      "yPn2pOVQEL": {
+        "Original": "Treat the newly exposed leather.",
+        "Revised": "Treat the newly exposed leather <with leather conditioner>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "lveBcJV7hj": {
+        "Original": "Talk with your date.",
+        "Revised": "Talk with your date <about their interests>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Tie",
+        "Label Distribution": [
+          2,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "WSLJz6Xis3": {
+        "Original": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health.",
+        "Revised": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health, <especially if being with them puts you in danger>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "1xo9so28GN": {
+        "Original": "Micro braids can be done with natural hair or by adding extensions.",
+        "Revised": "Micro braids and <box braids> can be done with natural hair or by adding extensions.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          6
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          5
+        ]
+      },
+      "2BpdIFnkDI": {
+        "Original": "Watch for dry mouth.",
+        "Revised": "Watch for dry mouth or <excess saliva>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      },
+      "at8Aoud7f0": {
+        "Original": "Nitrogen improves the foliage, potassium improves the flowering of a plant, and phosphorus improves the roots and fruit.",
+        "Revised": "Nitrogen improves the foliage, potassium improves the flowering and <overall strength> of a plant, and phosphorus improves the roots and fruit.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          3
+        ]
+      },
+      "rYiZo3h_Hm": {
+        "Original": "If your child continues to have problems with homework performance or also has problems with school in general, you may want to have them evaluated for a learning disability.",
+        "Revised": "If your child continues to have problems with homework performance or also has problems with school in general, you may want to have them evaluated for a learning disability or <have a conference with their teacher>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "YTU4F7xyxB": {
+        "Original": "Lay on your back with your knees in a table top position.",
+        "Revised": "Lay on your back with your knees in a table top position <with your arms crossed over your chest>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          2
+        ]
+      },
+      "LNFMkjVb7T": {
+        "Original": "Searching the database is not unlike using a search engine, but there are a couple ways to do it that will help you get more out of your research.",
+        "Revised": "Searching the database is not unlike using a search engine, but there are a couple ways to do it that will help you get more out of your research, <such as using advanced search settings>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          5
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          5
+        ]
+      }
+    }
+  },
+  "16": {
+    "No": {
+      "HP6vZ962J8": {
+        "Original": "This will show a translucent version of the frames before and after the one you're working on.",
+        "Revised": "This will show a translucent version of the frames before and after the one you're working on <which makes it much easier to animate>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "aKgfnoc7kv": {
+        "Original": "Take some time to look for organizations whose mission you agree with.",
+        "Revised": "Take some time to look for organizations whose mission you agree with <before supporting them>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "WKOzdjP3ED": {
+        "Original": "Use a styling comb with small teeth to part your hair off to one side.",
+        "Revised": "Use a styling comb with small teeth, <such as a rat tail comb>, to part your hair off to one side.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "NY9aaBn47E": {
+        "Original": "Spray the cat with a squirt of water.",
+        "Revised": "Spray the cat <when he climbs on the curtains> with a squirt of water.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "uVKsvNNk0E": {
+        "Original": "You're not alone, anymore, and things are going to get easier.",
+        "Revised": "You're not alone, anymore, and things are going to get easier <from this point onward>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "6n6d-j8l5e": {
+        "Original": "Open the phone book.",
+        "Revised": "Open the phone book <to the index>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "j1Rx2wgDo9": {
+        "Original": "This can help you feel confident in yourself and your abilities.",
+        "Revised": "This can help you feel confident in yourself and your abilities <by knowing that you're making an impact>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          2,
+          1
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          2
+        ]
+      },
+      "xOYdVLPTf9": {
+        "Original": "Check with your local government.",
+        "Revised": "Check with your local government <to know for sure>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    "Yes": {
+      "WSLJz6Xis3": {
+        "Original": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health.",
+        "Revised": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health, <especially if being with them puts you in danger>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "yPn2pOVQEL": {
+        "Original": "Treat the newly exposed leather.",
+        "Revised": "Treat the newly exposed leather <with leather conditioner>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          1,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "AO98PcaCqQ": {
+        "Original": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas",
+        "Revised": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas <on each side>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          6
+        ]
+      },
+      "qZZdMT1FlB": {
+        "Original": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA).",
+        "Revised": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA) or <other appropriate organisation>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      },
+      "1xo9so28GN": {
+        "Original": "Micro braids can be done with natural hair or by adding extensions.",
+        "Revised": "Micro braids and <box braids> can be done with natural hair or by adding extensions.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          6
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          5
+        ]
+      },
+      "5SjY1K5V3A": {
+        "Original": "Alternately, avoid foods whose nutrition labels list fat content and sodium levels that are through the roof.",
+        "Revised": "Alternately, avoid foods whose nutrition labels list fat content and sodium levels that are through the roof, <especially when the serving size is relatively small>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          3
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "MSOZ7pquk1": {
+        "Original": "You can also drink a glass of pure tart cranberry juice every day to further reduce your risk for urinary tract infections.",
+        "Revised": "You can also drink a glass of pure tart cranberry juice or <blueberry juice> every day to further reduce your risk for urinary tract infections.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "at8Aoud7f0": {
+        "Original": "Nitrogen improves the foliage, potassium improves the flowering of a plant, and phosphorus improves the roots and fruit.",
+        "Revised": "Nitrogen improves the foliage, potassium improves the flowering and <overall strength> of a plant, and phosphorus improves the roots and fruit.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          3
+        ]
+      }
+    }
+  },
+  "8": {
+    "No": {
+      "aKgfnoc7kv": {
+        "Original": "Take some time to look for organizations whose mission you agree with.",
+        "Revised": "Take some time to look for organizations whose mission you agree with <before supporting them>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      },
+      "WKOzdjP3ED": {
+        "Original": "Use a styling comb with small teeth to part your hair off to one side.",
+        "Revised": "Use a styling comb with small teeth, <such as a rat tail comb>, to part your hair off to one side.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          3
+        ]
+      },
+      "uVKsvNNk0E": {
+        "Original": "You're not alone, anymore, and things are going to get easier.",
+        "Revised": "You're not alone, anymore, and things are going to get easier <from this point onward>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          4,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "NY9aaBn47E": {
+        "Original": "Spray the cat with a squirt of water.",
+        "Revised": "Spray the cat <when he climbs on the curtains> with a squirt of water.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      }
+    },
+    "Yes": {
+      "AO98PcaCqQ": {
+        "Original": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas",
+        "Revised": "Outline and cut a sheet of brown wrapping paper about 1/2 inch (1.27 cm) shy of the actual size of the mounted canvas <on each side>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          2,
+          5
+        ],
+        "Confidence Distribution": [
+          1,
+          0,
+          6
+        ]
+      },
+      "WSLJz6Xis3": {
+        "Original": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health.",
+        "Revised": "Being married to someone who is troubled is extremely challenging and can take a toll on your physical and mental health, <especially if being with them puts you in danger>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          3,
+          2
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          4
+        ]
+      },
+      "MSOZ7pquk1": {
+        "Original": "You can also drink a glass of pure tart cranberry juice every day to further reduce your risk for urinary tract infections.",
+        "Revised": "You can also drink a glass of pure tart cranberry juice or <blueberry juice> every day to further reduce your risk for urinary tract infections.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "qZZdMT1FlB": {
+        "Original": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA).",
+        "Revised": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA) or <other appropriate organisation>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      }
+    }
+  },
+  "4": {
+    "No": {
+      "NY9aaBn47E": {
+        "Original": "Spray the cat with a squirt of water.",
+        "Revised": "Spray the cat <when he climbs on the curtains> with a squirt of water.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      },
+      "aKgfnoc7kv": {
+        "Original": "Take some time to look for organizations whose mission you agree with.",
+        "Revised": "Take some time to look for organizations whose mission you agree with <before supporting them>.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          6,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          6
+        ]
+      }
+    },
+    "Yes": {
+      "MSOZ7pquk1": {
+        "Original": "You can also drink a glass of pure tart cranberry juice every day to further reduce your risk for urinary tract infections.",
+        "Revised": "You can also drink a glass of pure tart cranberry juice or <blueberry juice> every day to further reduce your risk for urinary tract infections.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          0,
+          4
+        ]
+      },
+      "qZZdMT1FlB": {
+        "Original": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA).",
+        "Revised": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA) or <other appropriate organisation>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      }
+    }
+  },
+  "2": {
+    "No": {
+      "NY9aaBn47E": {
+        "Original": "Spray the cat with a squirt of water.",
+        "Revised": "Spray the cat <when he climbs on the curtains> with a squirt of water.",
+        "MACE Label": "Implicit",
+        "Majority Vote": "Implicit",
+        "Label Distribution": [
+          5,
+          0
+        ],
+        "Confidence Distribution": [
+          0,
+          2,
+          3
+        ]
+      }
+    },
+    "Yes": {
+      "qZZdMT1FlB": {
+        "Original": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA).",
+        "Revised": "If you find any issues, you can file a dispute to have them removed under the Fair Credit Reporting Act (FCRA) or <other appropriate organisation>.",
+        "MACE Label": "New Information",
+        "Majority Vote": "New Information",
+        "Label Distribution": [
+          0,
+          4
+        ],
+        "Confidence Distribution": [
+          0,
+          1,
+          3
+        ]
+      }
+    }
+  }
+}
